@@ -71,3 +71,25 @@
     <img src="https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white" alt="paypal" />
   </a>
 </div>
+<!-- feed start -->
+<a href="https://broslunas.com/blog/broslunas-cms/" target="_blank">
+  <img src="" width="100" title="Broslunas CMS: El Futuro de la Gestión de Contenido para Astro" alt="Broslunas CMS: El Futuro de la Gestión de Contenido para Astro" style="margin: 5px;"/>
+</a>
+
+<a href="https://broslunas.com/projects/cms/" target="_blank">
+  <img src="" width="100" title="Broslunas CMS" alt="Broslunas CMS" style="margin: 5px;"/>
+</a>
+
+<a href="https://broslunas.com/blog/lanzamiento-veredillasfm/" target="_blank">
+  <img src="" width="100" title="Veredillas FM: Reinventando la radio de tu insti" alt="Veredillas FM: Reinventando la radio de tu insti" style="margin: 5px;"/>
+</a>
+
+<a href="https://broslunas.com/projects/veredillasfm/" target="_blank">
+  <img src="" width="100" title="Veredillas FM" alt="Veredillas FM" style="margin: 5px;"/>
+</a>
+
+<a href="https://broslunas.com/blog/lanzamiento-brosdrop/" target="_blank">
+  <img src="" width="100" title="Presentando Brosdrop: El futuro de la transferencia de archivos" alt="Presentando Brosdrop: El futuro de la transferencia de archivos" style="margin: 5px;"/>
+</a>
+
+<!-- feed end -->
