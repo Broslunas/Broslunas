@@ -9,10 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
 
-      # SECCIÓN: PROYECTOS (Cards con imagen)
+      # PROYECTOS: Mostramos las capturas grandes
       - name: Update Projects
         uses: sarisia/actions-readme-feed@v1
         with:
@@ -20,16 +18,14 @@ jobs:
           file: "README.md"
           start_flag: ""
           end_flag: ""
-          # Filtramos solo las URLs que contienen /projects/
           whitelist: "https://broslunas.com/projects/.*"
           max_posts: 3
-          # Diseño de Card: Imagen + Título
           format: |
             <a href="${url}" target="_blank">
-              <img src="${image}" width="200" alt="${title}" style="border-radius:10px; margin: 5px;"/>
+              <img src="${image}" width="250" alt="${title}" style="border-radius:10px; margin: 10px;"/>
             </a>
-          
-      # SECCIÓN: BLOG (Lista elegante)
+
+      # BLOG: Solo texto para no saturar
       - name: Update Blog
         uses: sarisia/actions-readme-feed@v1
         with:
@@ -38,10 +34,10 @@ jobs:
           start_flag: ""
           end_flag: ""
           whitelist: "https://broslunas.com/blog/.*"
-          max_posts: 4
-          format: "- 📄 [${title}](${url}) — *${date}*"
+          max_posts: 5
+          format: "- [${title}](${url})"
 
-      # SECCIÓN: CERTIFICADOS (Mini Cards)
+      # CERTIFICADOS: Miniaturas al final
       - name: Update Certs
         uses: sarisia/actions-readme-feed@v1
         with:
@@ -50,13 +46,13 @@ jobs:
           start_flag: ""
           end_flag: ""
           whitelist: "https://broslunas.com/certificates/.*"
-          max_posts: 4
+          max_posts: 6
           format: |
             <a href="${url}" target="_blank">
-              <img src="${image}" width="100" title="${title}" alt="${title}" style="margin: 5px;"/>
+              <img src="${image}" height="80" title="${title}" style="margin: 5px;"/>
             </a>
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Design: UI updated with latest RSS images"
+          commit_message: "Actualización automática de Portfolio (Imágenes OK)"
