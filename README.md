@@ -27,6 +27,10 @@
 
 ---
 
+### 🚀 Últimos Proyectos y Blog
+
+---
+
 ### 📈 Mis Estadísticas de GitHub
 
 <div align="center">

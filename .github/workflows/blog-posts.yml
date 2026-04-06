@@ -1,0 +1,19 @@
+name: Update README with RSS
+on:
+  schedule:
+    - cron: '0 0 * * *' # Se actualiza cada medianoche
+  workflow_dispatch: # Permite que tú lo ejecutes manualmente cuando quieras
+
+jobs:
+  update-readme-with-blog:
+    name: Update README with RSS
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Pull RSS feed
+        uses: gautamkrishnar/blog-post-workflow@v1
+        with:
+          feed_list: "https://www.broslunas.com/rss.xml"
+          max_post_count: 5
+          template: "$emoji(item.title) [$title]($url)"
