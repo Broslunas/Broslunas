@@ -27,7 +27,14 @@
 
 ---
 
-### 🚀 Últimos Proyectos y Blog
+### 🚀 Proyectos Destacados
+<div align="center">
+</div>
+
+### 📝 Últimos Artículos
+### 🎓 Certificaciones Recientes
+<div align="center">
+</div>
 
 ---
 
@@ -64,11 +71,3 @@
     <img src="https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white" alt="paypal" />
   </a>
 </div>
-
-<!-- feed start -->
-- [Broslunas CMS: El Futuro de la Gestión de Contenido para Astro](https://broslunas.com/blog/broslunas-cms/)
-- [Veredillas FM: Reinventando la radio de tu insti](https://broslunas.com/blog/lanzamiento-veredillasfm/)
-- [Presentando Brosdrop: El futuro de la transferencia de archivos](https://broslunas.com/blog/lanzamiento-brosdrop/)
-- [Estrenamos Nuevo Sistema de Newsletter con Doble Verificación](https://broslunas.com/blog/nuevo-sistema-newsletter/)
-- [Actualización Importante: Mejoras de Seguridad en la Newsletter](https://broslunas.com/blog/actualizacion-seguridad-newsletter/)
-<!-- feed end -->

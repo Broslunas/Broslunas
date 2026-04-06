@@ -1,4 +1,4 @@
-name: Update README with RSS
+name: Update README
 on:
   schedule:
     - cron: '0 0 * * *'
@@ -9,20 +9,54 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
-      - name: Fetch RSS and Update
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # SECCIÓN: PROYECTOS (Cards con imagen)
+      - name: Update Projects
         uses: sarisia/actions-readme-feed@v1
         with:
           url: "https://www.broslunas.com/rss.xml"
           file: "README.md"
-          # Aquí definimos las marcas de otra forma si la anterior fallaba
           start_flag: ""
           end_flag: ""
-          # Formato de salida limpio
-          format: "- [${title}](${url})"
-          max_posts: 5
+          # Filtramos solo las URLs que contienen /projects/
+          whitelist: "https://broslunas.com/projects/.*"
+          max_posts: 3
+          # Diseño de Card: Imagen + Título
+          format: |
+            <a href="${url}" target="_blank">
+              <img src="${image}" width="200" alt="${title}" style="border-radius:10px; margin: 5px;"/>
+            </a>
+          
+      # SECCIÓN: BLOG (Lista elegante)
+      - name: Update Blog
+        uses: sarisia/actions-readme-feed@v1
+        with:
+          url: "https://www.broslunas.com/rss.xml"
+          file: "README.md"
+          start_flag: ""
+          end_flag: ""
+          whitelist: "https://broslunas.com/blog/.*"
+          max_posts: 4
+          format: "- 📄 [${title}](${url}) — *${date}*"
+
+      # SECCIÓN: CERTIFICADOS (Mini Cards)
+      - name: Update Certs
+        uses: sarisia/actions-readme-feed@v1
+        with:
+          url: "https://www.broslunas.com/rss.xml"
+          file: "README.md"
+          start_flag: ""
+          end_flag: ""
+          whitelist: "https://broslunas.com/certificates/.*"
+          max_posts: 4
+          format: |
+            <a href="${url}" target="_blank">
+              <img src="${image}" width="100" title="${title}" alt="${title}" style="margin: 5px;"/>
+            </a>
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Actualizado con los últimos posts del blog"
+          commit_message: "Design: UI updated with latest RSS images"
