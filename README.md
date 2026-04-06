@@ -28,11 +28,49 @@
 
 ### 🚀 Proyectos Destacados
 <div align="center">
+<!-- projects:start -->
+<a href="https://broslunas.com/projects/cms/" target="_blank">
+  <img src="https://cdn.broslunas.com/projects/brl-cms.png" width="250" alt="Broslunas CMS" style="border-radius:10px; margin: 10px;"/>
+</a>
+<a href="https://broslunas.com/projects/veredillasfm/" target="_blank">
+  <img src="https://cdn.broslunas.com/projects/veredillasfm.webp" width="250" alt="Veredillas FM" style="border-radius:10px; margin: 10px;"/>
+</a>
+<a href="https://broslunas.com/projects/brosdrop/" target="_blank">
+  <img src="https://cdn.broslunas.com/projects/brosdrop.webp" width="250" alt="Brosdrop" style="border-radius:10px; margin: 10px;"/>
+</a>
+<!-- projects:end -->
 </div>
 
 ### 📝 Últimos Artículos
+<!-- blog:start -->
+- [Broslunas CMS: El Futuro de la Gestión de Contenido para Astro](https://broslunas.com/blog/broslunas-cms/)
+- [Veredillas FM: Reinventando la radio de tu insti](https://broslunas.com/blog/lanzamiento-veredillasfm/)
+- [Presentando Brosdrop: El futuro de la transferencia de archivos](https://broslunas.com/blog/lanzamiento-brosdrop/)
+- [Estrenamos Nuevo Sistema de Newsletter con Doble Verificación](https://broslunas.com/blog/nuevo-sistema-newsletter/)
+- [Actualización Importante: Mejoras de Seguridad en la Newsletter](https://broslunas.com/blog/actualizacion-seguridad-newsletter/)
+<!-- blog:end -->
 ### 🎓 Certificaciones Recientes
 <div align="center">
+<!-- certs:start -->
+<a href="https://broslunas.com/certificates/cibersecurity-google/" target="_blank">
+  <img src="https://cdn.broslunas.com/certificates/cibersecurity-google.png" height="80" title="Google Cybersecurity" style="margin: 5px;"/>
+</a>
+<a href="https://broslunas.com/certificates/figma-desde-0/" target="_blank">
+  <img src="https://cdn.broslunas.com/certificates/figma-desde-0.png" height="80" title="Figma Desde 0" style="margin: 5px;"/>
+</a>
+<a href="https://broslunas.com/certificates/css-desde-0/" target="_blank">
+  <img src="https://cdn.broslunas.com/certificates/css-desde-0.png" height="80" title="CSS Desde 0" style="margin: 5px;"/>
+</a>
+<a href="https://broslunas.com/certificates/html-desde-0/" target="_blank">
+  <img src="https://cdn.broslunas.com/certificates/html-desde-0.png" height="80" title="HTML desde 0" style="margin: 5px;"/>
+</a>
+<a href="https://broslunas.com/certificates/model-context-protocol/" target="_blank">
+  <img src="https://cdn.broslunas.com/certificates/mcp.png" height="80" title="MCP: Model Context Protocol" style="margin: 5px;"/>
+</a>
+<a href="https://broslunas.com/certificates/mongodb/" target="_blank">
+  <img src="https://cdn.broslunas.com/certificates/mongodb.png" height="80" title="MongoDB" style="margin: 5px;"/>
+</a>
+<!-- certs:end -->
 </div>
 
 ---
@@ -54,7 +92,7 @@
 </div>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=Broslunas&theme=github_dark&hide_border=true" alt="streak graph"  />
+  <img src="https://streak-stats.demolab.com?user=Broslunas&theme=github_dark&hide_border=true&locale=es" alt="streak graph"  />
 </div>
 
 ---
@@ -68,25 +106,3 @@
     <img src="https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white" alt="paypal" />
   </a>
 </div>
-<!-- feed start -->
-<a href="https://broslunas.com/blog/broslunas-cms/" target="_blank">
-  <img src="" height="80" title="Broslunas CMS: El Futuro de la Gestión de Contenido para Astro" style="margin: 5px;"/>
-</a>
-
-<a href="https://broslunas.com/projects/cms/" target="_blank">
-  <img src="" height="80" title="Broslunas CMS" style="margin: 5px;"/>
-</a>
-
-<a href="https://broslunas.com/blog/lanzamiento-veredillasfm/" target="_blank">
-  <img src="" height="80" title="Veredillas FM: Reinventando la radio de tu insti" style="margin: 5px;"/>
-</a>
-
-<a href="https://broslunas.com/projects/veredillasfm/" target="_blank">
-  <img src="" height="80" title="Veredillas FM" style="margin: 5px;"/>
-</a>
-
-<a href="https://broslunas.com/blog/lanzamiento-brosdrop/" target="_blank">
-  <img src="" height="80" title="Presentando Brosdrop: El futuro de la transferencia de archivos" style="margin: 5px;"/>
-</a>
-
-<!-- feed end -->
