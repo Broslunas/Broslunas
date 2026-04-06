@@ -73,18 +73,22 @@ def main():
   </tr>
 </table>"""
 
-    certs_format = """<table border="0" style="display:inline-block; margin: 10px;">
-  <tr><td align="center">
-    <a href="{url}" target="_blank">
-      <img src="{image}" height="100" title="{title}" style="border-radius:8px;"/>
-    </a>
-    <br/><b>{title}</b><br/>{date}
-  </td></tr>
-</table>"""
-
     projects_html = extract_data(items, '/projects/', 3, card_format)
     blog_html = extract_data(items, '/blog/', 3, card_format) # limited to 3 to not fill the whole screen
-    certs_html = extract_data(items, '/certificates/', 6, certs_format)
+    
+    # Extract certs explicitly to make a grid (3 columns per row)
+    certs_tds = extract_data(items, '/certificates/', 6, '<td align="center" valign="top" width="33%"><a href="{url}" target="_blank"><img src="{image}" height="100" title="{title}" style="border-radius:8px;"/></a><br/><br/><b>{title}</b><br/>{date}</td>')
+    certs_list = certs_tds.split('\n')
+    
+    certs_html = "<table>"
+    for i, td in enumerate(certs_list):
+        if i % 3 == 0:
+            if i > 0: certs_html += "</tr>"
+            certs_html += "<tr>"
+        certs_html += td
+    if certs_list:
+        certs_html += "</tr>"
+    certs_html += "</table>"
 
     with open('README.md', 'r', encoding='utf-8') as f:
         readme = f.read()

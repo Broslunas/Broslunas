@@ -122,54 +122,7 @@
 ### 🎓 Certificaciones Recientes
 <div align="center">
 <!-- certs:start -->
-<table border="0" style="display:inline-block; margin: 10px;">
-  <tr><td align="center">
-    <a href="https://broslunas.com/certificates/cibersecurity-google/" target="_blank">
-      <img src="https://cdn.broslunas.com/certificates/cibersecurity-google.png" height="100" title="Google Cybersecurity" style="border-radius:8px;"/>
-    </a>
-    <br/><b>Google Cybersecurity</b><br/>19/09/2025
-  </td></tr>
-</table>
-<table border="0" style="display:inline-block; margin: 10px;">
-  <tr><td align="center">
-    <a href="https://broslunas.com/certificates/figma-desde-0/" target="_blank">
-      <img src="https://cdn.broslunas.com/certificates/figma-desde-0.png" height="100" title="Figma Desde 0" style="border-radius:8px;"/>
-    </a>
-    <br/><b>Figma Desde 0</b><br/>16/07/2025
-  </td></tr>
-</table>
-<table border="0" style="display:inline-block; margin: 10px;">
-  <tr><td align="center">
-    <a href="https://broslunas.com/certificates/css-desde-0/" target="_blank">
-      <img src="https://cdn.broslunas.com/certificates/css-desde-0.png" height="100" title="CSS Desde 0" style="border-radius:8px;"/>
-    </a>
-    <br/><b>CSS Desde 0</b><br/>12/07/2025
-  </td></tr>
-</table>
-<table border="0" style="display:inline-block; margin: 10px;">
-  <tr><td align="center">
-    <a href="https://broslunas.com/certificates/html-desde-0/" target="_blank">
-      <img src="https://cdn.broslunas.com/certificates/html-desde-0.png" height="100" title="HTML desde 0" style="border-radius:8px;"/>
-    </a>
-    <br/><b>HTML desde 0</b><br/>11/07/2025
-  </td></tr>
-</table>
-<table border="0" style="display:inline-block; margin: 10px;">
-  <tr><td align="center">
-    <a href="https://broslunas.com/certificates/model-context-protocol/" target="_blank">
-      <img src="https://cdn.broslunas.com/certificates/mcp.png" height="100" title="MCP: Model Context Protocol" style="border-radius:8px;"/>
-    </a>
-    <br/><b>MCP: Model Context Protocol</b><br/>05/06/2025
-  </td></tr>
-</table>
-<table border="0" style="display:inline-block; margin: 10px;">
-  <tr><td align="center">
-    <a href="https://broslunas.com/certificates/mongodb/" target="_blank">
-      <img src="https://cdn.broslunas.com/certificates/mongodb.png" height="100" title="MongoDB" style="border-radius:8px;"/>
-    </a>
-    <br/><b>MongoDB</b><br/>29/04/2025
-  </td></tr>
-</table>
+<table><tr><td align="center" valign="top" width="33%"><a href="https://broslunas.com/certificates/cibersecurity-google/" target="_blank"><img src="https://cdn.broslunas.com/certificates/cibersecurity-google.png" height="100" title="Google Cybersecurity" style="border-radius:8px;"/></a><br/><br/><b>Google Cybersecurity</b><br/>19/09/2025</td><td align="center" valign="top" width="33%"><a href="https://broslunas.com/certificates/figma-desde-0/" target="_blank"><img src="https://cdn.broslunas.com/certificates/figma-desde-0.png" height="100" title="Figma Desde 0" style="border-radius:8px;"/></a><br/><br/><b>Figma Desde 0</b><br/>16/07/2025</td><td align="center" valign="top" width="33%"><a href="https://broslunas.com/certificates/css-desde-0/" target="_blank"><img src="https://cdn.broslunas.com/certificates/css-desde-0.png" height="100" title="CSS Desde 0" style="border-radius:8px;"/></a><br/><br/><b>CSS Desde 0</b><br/>12/07/2025</td></tr><tr><td align="center" valign="top" width="33%"><a href="https://broslunas.com/certificates/html-desde-0/" target="_blank"><img src="https://cdn.broslunas.com/certificates/html-desde-0.png" height="100" title="HTML desde 0" style="border-radius:8px;"/></a><br/><br/><b>HTML desde 0</b><br/>11/07/2025</td><td align="center" valign="top" width="33%"><a href="https://broslunas.com/certificates/model-context-protocol/" target="_blank"><img src="https://cdn.broslunas.com/certificates/mcp.png" height="100" title="MCP: Model Context Protocol" style="border-radius:8px;"/></a><br/><br/><b>MCP: Model Context Protocol</b><br/>05/06/2025</td><td align="center" valign="top" width="33%"><a href="https://broslunas.com/certificates/mongodb/" target="_blank"><img src="https://cdn.broslunas.com/certificates/mongodb.png" height="100" title="MongoDB" style="border-radius:8px;"/></a><br/><br/><b>MongoDB</b><br/>29/04/2025</td></tr></table>
 <!-- certs:end -->
 </div>
 
