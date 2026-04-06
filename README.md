@@ -32,6 +32,20 @@
 <table width="100%" border="0">
   <tr>
     <td width="40%" align="center">
+      <a href="https://broslunas.com/projects/impresoras-veredillasfm/" target="_blank">
+        <img src="https://cdn.broslunas.com/projects/vfm-impresoras.webp" width="100%" style="max-width: 400px; border-radius:10px; margin: 10px;" alt="VeredillasFM Impresiones 3D"/>
+      </a>
+    </td>
+    <td width="60%">
+      <h3><a href="https://broslunas.com/projects/impresoras-veredillasfm/" target="_blank">VeredillasFM Impresiones 3D</a></h3>
+      <p>📅 <strong>06/04/2026</strong></p>
+      <p>Infraestructura de micro-servicios para la gestión de impresión 3D bajo demanda, integrada con el ecosistema Veredillas FM y automatizada mediante ...</p>
+    </td>
+  </tr>
+</table>
+<table width="100%" border="0">
+  <tr>
+    <td width="40%" align="center">
       <a href="https://broslunas.com/projects/cms/" target="_blank">
         <img src="https://cdn.broslunas.com/projects/brl-cms.png" width="100%" style="max-width: 400px; border-radius:10px; margin: 10px;" alt="Broslunas CMS"/>
       </a>
@@ -57,25 +71,25 @@
     </td>
   </tr>
 </table>
-<table width="100%" border="0">
-  <tr>
-    <td width="40%" align="center">
-      <a href="https://broslunas.com/projects/brosdrop/" target="_blank">
-        <img src="https://cdn.broslunas.com/projects/brosdrop.webp" width="100%" style="max-width: 400px; border-radius:10px; margin: 10px;" alt="Brosdrop"/>
-      </a>
-    </td>
-    <td width="60%">
-      <h3><a href="https://broslunas.com/projects/brosdrop/" target="_blank">Brosdrop</a></h3>
-      <p>📅 <strong>26/12/2025</strong></p>
-      <p>Plataforma de transferencia de archivos segura y rápida, diseñada como alternativa moderna a WeTransfer con almacenamiento en Cloudflare R2.</p>
-    </td>
-  </tr>
-</table>
 <!-- projects:end -->
 </div>
 
 ### 📝 Últimos Artículos
 <!-- blog:start -->
+<table width="100%" border="0">
+  <tr>
+    <td width="40%" align="center">
+      <a href="https://broslunas.com/blog/lanzamiento-impresoras-veredillasfm/" target="_blank">
+        <img src="https://cdn.broslunas.com/projects/vfm-impresoras.webp" width="100%" style="max-width: 400px; border-radius:10px; margin: 10px;" alt="¡Lanzamos VeredillasFM Impresiones 3D!"/>
+      </a>
+    </td>
+    <td width="60%">
+      <h3><a href="https://broslunas.com/blog/lanzamiento-impresoras-veredillasfm/" target="_blank">¡Lanzamos VeredillasFM Impresiones 3D!</a></h3>
+      <p>📅 <strong>06/04/2026</strong></p>
+      <p>Ampliamos el ecosistema de Veredillas FM con un nuevo servicio de impresión 3D para toda la comunidad educativa del IES Las Veredillas.</p>
+    </td>
+  </tr>
+</table>
 <table width="100%" border="0">
   <tr>
     <td width="40%" align="center">
@@ -101,20 +115,6 @@
       <h3><a href="https://broslunas.com/blog/lanzamiento-veredillasfm/" target="_blank">Veredillas FM: Reinventando la radio de tu insti</a></h3>
       <p>📅 <strong>31/01/2026</strong></p>
       <p>Te presento la nueva web de Veredillas FM. Mucho más que escuchar podcasts: chat en directo, noticias y una comunidad para todos.</p>
-    </td>
-  </tr>
-</table>
-<table width="100%" border="0">
-  <tr>
-    <td width="40%" align="center">
-      <a href="https://broslunas.com/blog/lanzamiento-brosdrop/" target="_blank">
-        <img src="https://cdn.broslunas.com/blog/brosdrop.webp" width="100%" style="max-width: 400px; border-radius:10px; margin: 10px;" alt="Presentando Brosdrop: El futuro de la transferencia de archivos"/>
-      </a>
-    </td>
-    <td width="60%">
-      <h3><a href="https://broslunas.com/blog/lanzamiento-brosdrop/" target="_blank">Presentando Brosdrop: El futuro de la transferencia de archivos</a></h3>
-      <p>📅 <strong>26/12/2025</strong></p>
-      <p>Un vistazo profundo a Brosdrop, mi nueva plataforma SaaS de transferencia de archivos construida con Next.js, Cloudflare R2 y MongoDB.</p>
     </td>
   </tr>
 </table>
