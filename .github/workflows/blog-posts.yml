@@ -1,19 +1,28 @@
 name: Update README with RSS
 on:
   schedule:
-    - cron: '0 0 * * *' # Se actualiza cada medianoche
-  workflow_dispatch: # Permite que tú lo ejecutes manualmente cuando quieras
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
-  update-readme-with-blog:
-    name: Update README with RSS
+  update-readme:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Pull RSS feed
-        uses: gautamkrishnar/blog-post-workflow@v1
+      - uses: actions/checkout@v4
+      
+      - name: Fetch RSS and Update
+        uses: sarisia/actions-readme-feed@v1
         with:
-          feed_list: "https://www.broslunas.com/rss.xml"
-          max_post_count: 5
-          template: "$emoji(item.title) [$title]($url)"
+          url: "https://www.broslunas.com/rss.xml"
+          file: "README.md"
+          # Aquí definimos las marcas de otra forma si la anterior fallaba
+          start_flag: ""
+          end_flag: ""
+          # Formato de salida limpio
+          format: "- [${title}](${url})"
+          max_posts: 5
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Actualizado con los últimos posts del blog"
