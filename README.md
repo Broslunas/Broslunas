@@ -29,47 +29,147 @@
 ### 🚀 Proyectos Destacados
 <div align="center">
 <!-- projects:start -->
-<a href="https://broslunas.com/projects/cms/" target="_blank">
-  <img src="https://cdn.broslunas.com/projects/brl-cms.png" width="250" alt="Broslunas CMS" style="border-radius:10px; margin: 10px;"/>
-</a>
-<a href="https://broslunas.com/projects/veredillasfm/" target="_blank">
-  <img src="https://cdn.broslunas.com/projects/veredillasfm.webp" width="250" alt="Veredillas FM" style="border-radius:10px; margin: 10px;"/>
-</a>
-<a href="https://broslunas.com/projects/brosdrop/" target="_blank">
-  <img src="https://cdn.broslunas.com/projects/brosdrop.webp" width="250" alt="Brosdrop" style="border-radius:10px; margin: 10px;"/>
-</a>
+<table width="100%" border="0">
+  <tr>
+    <td width="40%" align="center">
+      <a href="https://broslunas.com/projects/cms/" target="_blank">
+        <img src="https://cdn.broslunas.com/projects/brl-cms.png" width="100%" style="max-width: 400px; border-radius:10px; margin: 10px;" alt="Broslunas CMS"/>
+      </a>
+    </td>
+    <td width="60%">
+      <h3><a href="https://broslunas.com/projects/cms/" target="_blank">Broslunas CMS</a></h3>
+      <p>📅 <strong>07/02/2026</strong></p>
+      <p>Descubre Broslunas CMS, el revolucionario sistema de gestión de contenidos para Astro. Simplifica la creación de contenidos, automatiza las impleme...</p>
+    </td>
+  </tr>
+</table>
+<table width="100%" border="0">
+  <tr>
+    <td width="40%" align="center">
+      <a href="https://broslunas.com/projects/veredillasfm/" target="_blank">
+        <img src="https://cdn.broslunas.com/projects/veredillasfm.webp" width="100%" style="max-width: 400px; border-radius:10px; margin: 10px;" alt="Veredillas FM"/>
+      </a>
+    </td>
+    <td width="60%">
+      <h3><a href="https://broslunas.com/projects/veredillasfm/" target="_blank">Veredillas FM</a></h3>
+      <p>📅 <strong>31/01/2026</strong></p>
+      <p>La plataforma oficial de podcast y radio digital del IES Veredillas. Ecosistema digital completo con streaming, gestión de comunidad y automatizaci...</p>
+    </td>
+  </tr>
+</table>
+<table width="100%" border="0">
+  <tr>
+    <td width="40%" align="center">
+      <a href="https://broslunas.com/projects/brosdrop/" target="_blank">
+        <img src="https://cdn.broslunas.com/projects/brosdrop.webp" width="100%" style="max-width: 400px; border-radius:10px; margin: 10px;" alt="Brosdrop"/>
+      </a>
+    </td>
+    <td width="60%">
+      <h3><a href="https://broslunas.com/projects/brosdrop/" target="_blank">Brosdrop</a></h3>
+      <p>📅 <strong>26/12/2025</strong></p>
+      <p>Plataforma de transferencia de archivos segura y rápida, diseñada como alternativa moderna a WeTransfer con almacenamiento en Cloudflare R2.</p>
+    </td>
+  </tr>
+</table>
 <!-- projects:end -->
 </div>
 
 ### 📝 Últimos Artículos
 <!-- blog:start -->
-- [Broslunas CMS: El Futuro de la Gestión de Contenido para Astro](https://broslunas.com/blog/broslunas-cms/)
-- [Veredillas FM: Reinventando la radio de tu insti](https://broslunas.com/blog/lanzamiento-veredillasfm/)
-- [Presentando Brosdrop: El futuro de la transferencia de archivos](https://broslunas.com/blog/lanzamiento-brosdrop/)
-- [Estrenamos Nuevo Sistema de Newsletter con Doble Verificación](https://broslunas.com/blog/nuevo-sistema-newsletter/)
-- [Actualización Importante: Mejoras de Seguridad en la Newsletter](https://broslunas.com/blog/actualizacion-seguridad-newsletter/)
+<table width="100%" border="0">
+  <tr>
+    <td width="40%" align="center">
+      <a href="https://broslunas.com/blog/broslunas-cms/" target="_blank">
+        <img src="https://cdn.broslunas.com/projects/brl-cms.png" width="100%" style="max-width: 400px; border-radius:10px; margin: 10px;" alt="Broslunas CMS: El Futuro de la Gestión de Contenido para Astro"/>
+      </a>
+    </td>
+    <td width="60%">
+      <h3><a href="https://broslunas.com/blog/broslunas-cms/" target="_blank">Broslunas CMS: El Futuro de la Gestión de Contenido para Astro</a></h3>
+      <p>📅 <strong>07/02/2026</strong></p>
+      <p>Descubre Broslunas CMS, el sistema de gestión de contenido diseñado para simplificar la creación y gestión de sitios web y aplicaciones Astro. Inte...</p>
+    </td>
+  </tr>
+</table>
+<table width="100%" border="0">
+  <tr>
+    <td width="40%" align="center">
+      <a href="https://broslunas.com/blog/lanzamiento-veredillasfm/" target="_blank">
+        <img src="https://cdn.broslunas.com/blog/veredillasfm.webp" width="100%" style="max-width: 400px; border-radius:10px; margin: 10px;" alt="Veredillas FM: Reinventando la radio de tu insti"/>
+      </a>
+    </td>
+    <td width="60%">
+      <h3><a href="https://broslunas.com/blog/lanzamiento-veredillasfm/" target="_blank">Veredillas FM: Reinventando la radio de tu insti</a></h3>
+      <p>📅 <strong>31/01/2026</strong></p>
+      <p>Te presento la nueva web de Veredillas FM. Mucho más que escuchar podcasts: chat en directo, noticias y una comunidad para todos.</p>
+    </td>
+  </tr>
+</table>
+<table width="100%" border="0">
+  <tr>
+    <td width="40%" align="center">
+      <a href="https://broslunas.com/blog/lanzamiento-brosdrop/" target="_blank">
+        <img src="https://cdn.broslunas.com/blog/brosdrop.webp" width="100%" style="max-width: 400px; border-radius:10px; margin: 10px;" alt="Presentando Brosdrop: El futuro de la transferencia de archivos"/>
+      </a>
+    </td>
+    <td width="60%">
+      <h3><a href="https://broslunas.com/blog/lanzamiento-brosdrop/" target="_blank">Presentando Brosdrop: El futuro de la transferencia de archivos</a></h3>
+      <p>📅 <strong>26/12/2025</strong></p>
+      <p>Un vistazo profundo a Brosdrop, mi nueva plataforma SaaS de transferencia de archivos construida con Next.js, Cloudflare R2 y MongoDB.</p>
+    </td>
+  </tr>
+</table>
 <!-- blog:end -->
 ### 🎓 Certificaciones Recientes
 <div align="center">
 <!-- certs:start -->
-<a href="https://broslunas.com/certificates/cibersecurity-google/" target="_blank">
-  <img src="https://cdn.broslunas.com/certificates/cibersecurity-google.png" height="80" title="Google Cybersecurity" style="margin: 5px;"/>
-</a>
-<a href="https://broslunas.com/certificates/figma-desde-0/" target="_blank">
-  <img src="https://cdn.broslunas.com/certificates/figma-desde-0.png" height="80" title="Figma Desde 0" style="margin: 5px;"/>
-</a>
-<a href="https://broslunas.com/certificates/css-desde-0/" target="_blank">
-  <img src="https://cdn.broslunas.com/certificates/css-desde-0.png" height="80" title="CSS Desde 0" style="margin: 5px;"/>
-</a>
-<a href="https://broslunas.com/certificates/html-desde-0/" target="_blank">
-  <img src="https://cdn.broslunas.com/certificates/html-desde-0.png" height="80" title="HTML desde 0" style="margin: 5px;"/>
-</a>
-<a href="https://broslunas.com/certificates/model-context-protocol/" target="_blank">
-  <img src="https://cdn.broslunas.com/certificates/mcp.png" height="80" title="MCP: Model Context Protocol" style="margin: 5px;"/>
-</a>
-<a href="https://broslunas.com/certificates/mongodb/" target="_blank">
-  <img src="https://cdn.broslunas.com/certificates/mongodb.png" height="80" title="MongoDB" style="margin: 5px;"/>
-</a>
+<table border="0" style="display:inline-block; margin: 10px;">
+  <tr><td align="center">
+    <a href="https://broslunas.com/certificates/cibersecurity-google/" target="_blank">
+      <img src="https://cdn.broslunas.com/certificates/cibersecurity-google.png" height="100" title="Google Cybersecurity" style="border-radius:8px;"/>
+    </a>
+    <br/><b>Google Cybersecurity</b><br/>19/09/2025
+  </td></tr>
+</table>
+<table border="0" style="display:inline-block; margin: 10px;">
+  <tr><td align="center">
+    <a href="https://broslunas.com/certificates/figma-desde-0/" target="_blank">
+      <img src="https://cdn.broslunas.com/certificates/figma-desde-0.png" height="100" title="Figma Desde 0" style="border-radius:8px;"/>
+    </a>
+    <br/><b>Figma Desde 0</b><br/>16/07/2025
+  </td></tr>
+</table>
+<table border="0" style="display:inline-block; margin: 10px;">
+  <tr><td align="center">
+    <a href="https://broslunas.com/certificates/css-desde-0/" target="_blank">
+      <img src="https://cdn.broslunas.com/certificates/css-desde-0.png" height="100" title="CSS Desde 0" style="border-radius:8px;"/>
+    </a>
+    <br/><b>CSS Desde 0</b><br/>12/07/2025
+  </td></tr>
+</table>
+<table border="0" style="display:inline-block; margin: 10px;">
+  <tr><td align="center">
+    <a href="https://broslunas.com/certificates/html-desde-0/" target="_blank">
+      <img src="https://cdn.broslunas.com/certificates/html-desde-0.png" height="100" title="HTML desde 0" style="border-radius:8px;"/>
+    </a>
+    <br/><b>HTML desde 0</b><br/>11/07/2025
+  </td></tr>
+</table>
+<table border="0" style="display:inline-block; margin: 10px;">
+  <tr><td align="center">
+    <a href="https://broslunas.com/certificates/model-context-protocol/" target="_blank">
+      <img src="https://cdn.broslunas.com/certificates/mcp.png" height="100" title="MCP: Model Context Protocol" style="border-radius:8px;"/>
+    </a>
+    <br/><b>MCP: Model Context Protocol</b><br/>05/06/2025
+  </td></tr>
+</table>
+<table border="0" style="display:inline-block; margin: 10px;">
+  <tr><td align="center">
+    <a href="https://broslunas.com/certificates/mongodb/" target="_blank">
+      <img src="https://cdn.broslunas.com/certificates/mongodb.png" height="100" title="MongoDB" style="border-radius:8px;"/>
+    </a>
+    <br/><b>MongoDB</b><br/>29/04/2025
+  </td></tr>
+</table>
 <!-- certs:end -->
 </div>
 

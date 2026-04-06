@@ -2,6 +2,8 @@ import urllib.request
 import xml.etree.ElementTree as ET
 import re
 
+from email.utils import parsedate_to_datetime
+
 def extract_data(items, category, max_items, html_format):
     res = []
     for item in items:
@@ -16,7 +18,23 @@ def extract_data(items, category, max_items, html_format):
             img_elem = item.find('image')
             image = img_elem.text.strip() if img_elem is not None else ''
             
-            res.append(html_format.format(url=link, title=title, image=image))
+            pub_date_elem = item.find('pubDate')
+            if pub_date_elem is not None and pub_date_elem.text:
+                try:
+                    dt = parsedate_to_datetime(pub_date_elem.text.strip())
+                    date = dt.strftime("%d/%m/%Y")
+                except:
+                    date = pub_date_elem.text.strip()[:16]
+            else:
+                date = ''
+                
+            desc_elem = item.find('description')
+            desc = desc_elem.text.strip() if desc_elem is not None else ''
+            # Truncate description if too long
+            if len(desc) > 150:
+                desc = desc[:147] + '...'
+            
+            res.append(html_format.format(url=link, title=title, image=image, date=date, desc=desc))
             if len(res) >= max_items:
                 break
     return '\n'.join(res)
@@ -39,12 +57,33 @@ def main():
     root = ET.fromstring(xml_data)
     items = root.findall('.//item')
 
-    projects_format = '<a href="{url}" target="_blank">\n  <img src="{image}" width="250" alt="{title}" style="border-radius:10px; margin: 10px;"/>\n</a>'
-    blog_format = '- [{title}]({url})'
-    certs_format = '<a href="{url}" target="_blank">\n  <img src="{image}" height="80" title="{title}" style="margin: 5px;"/>\n</a>'
+    # Template for large items with side image and text
+    card_format = """<table width="100%" border="0">
+  <tr>
+    <td width="40%" align="center">
+      <a href="{url}" target="_blank">
+        <img src="{image}" width="100%" style="max-width: 400px; border-radius:10px; margin: 10px;" alt="{title}"/>
+      </a>
+    </td>
+    <td width="60%">
+      <h3><a href="{url}" target="_blank">{title}</a></h3>
+      <p>📅 <strong>{date}</strong></p>
+      <p>{desc}</p>
+    </td>
+  </tr>
+</table>"""
 
-    projects_html = extract_data(items, '/projects/', 3, projects_format)
-    blog_html = extract_data(items, '/blog/', 5, blog_format)
+    certs_format = """<table border="0" style="display:inline-block; margin: 10px;">
+  <tr><td align="center">
+    <a href="{url}" target="_blank">
+      <img src="{image}" height="100" title="{title}" style="border-radius:8px;"/>
+    </a>
+    <br/><b>{title}</b><br/>{date}
+  </td></tr>
+</table>"""
+
+    projects_html = extract_data(items, '/projects/', 3, card_format)
+    blog_html = extract_data(items, '/blog/', 3, card_format) # limited to 3 to not fill the whole screen
     certs_html = extract_data(items, '/certificates/', 6, certs_format)
 
     with open('README.md', 'r', encoding='utf-8') as f:
