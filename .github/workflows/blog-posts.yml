@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # PROYECTOS: Mostramos las capturas grandes
+      # PROYECTOS
       - name: Update Projects
         uses: sarisia/actions-readme-feed@v1
         with:
@@ -20,12 +20,13 @@ jobs:
           end_flag: ""
           whitelist: "https://broslunas.com/projects/.*"
           max_posts: 3
+          # Forzamos la lectura de la imagen personalizada
           format: |
             <a href="${url}" target="_blank">
-              <img src="${image}" width="250" alt="${title}" style="border-radius:10px; margin: 10px;"/>
+              <img src="${item.image}" width="250" alt="${title}" style="border-radius:10px; margin: 10px;"/>
             </a>
 
-      # BLOG: Solo texto para no saturar
+      # BLOG
       - name: Update Blog
         uses: sarisia/actions-readme-feed@v1
         with:
@@ -37,7 +38,7 @@ jobs:
           max_posts: 5
           format: "- [${title}](${url})"
 
-      # CERTIFICADOS: Miniaturas al final
+      # CERTIFICADOS
       - name: Update Certs
         uses: sarisia/actions-readme-feed@v1
         with:
@@ -49,10 +50,10 @@ jobs:
           max_posts: 6
           format: |
             <a href="${url}" target="_blank">
-              <img src="${image}" height="80" title="${title}" style="margin: 5px;"/>
+              <img src="${item.image}" height="80" title="${title}" style="margin: 5px;"/>
             </a>
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Actualización automática de Portfolio (Imágenes OK)"
+          commit_message: "UI: Fix images and sections"
