@@ -145,7 +145,7 @@
 </div>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=Broslunas&theme=github_dark&hide_border=true&locale=es" alt="streak graph"  />
+  <img src="https://streak-stats.demolab.com?user=Broslunas&theme=github_dark&hide_border=true&locale=es&mode=weekly" alt="streak graph"  />
 </div>
 
 ---
