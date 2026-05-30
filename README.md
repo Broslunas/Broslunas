@@ -142,11 +142,6 @@
 <br>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Broslunas&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true" height="170" alt="stats graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Broslunas&layout=compact&theme=github_dark&hide_border=true&langs_count=6" height="170" alt="languages graph"  />
-</div>
-
-<div align="center">
   <img src="https://streak-stats.demolab.com?user=Broslunas&theme=github_dark&hide_border=true&locale=es&mode=weekly" alt="streak graph"  />
 </div>
 
