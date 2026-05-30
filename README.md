@@ -4,7 +4,7 @@
 
 <div align="center">
   <a href="https://broslunas.com" target="_blank">
-    <img src="https://readme-typing-svg.demolab.com?font=Outfit&weight=600&size=24&pause=1000&color=BC52EE&center=true&vCenter=true&width=500&lines=Front-end+Developer;UI%2FUX+%26+Performance+Enthusiast;React+%26+Next.js+Specialist;Building+Creative+Experiences+on+the+Web" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Outfit&weight=600&size=24&pause=1000&color=BC52EE&center=true&vCenter=true&width=500&lines=Full-stack+Developer;UI%2FUX+%26+Performance+Enthusiast;React+%26+Next.js+Specialist;Building+Creative+Experiences+on+the+Web" alt="Typing SVG" />
   </a>
   
   <p>
@@ -12,7 +12,7 @@
   </p>
 
   <p>
-    Me especializo en crear experiencias web modernas, rápidas y accesibles. Actualmente enfocado en el ecosistema de <b>React</b>, <b>Next.js</b> y explorando el potencial de <b>Astro</b>.
+    Me especializo en diseñar y desarrollar aplicaciones web modernas, rápidas y escalables de extremo a extremo (Full-stack). Actualmente enfocado en el ecosistema de <b>React</b>, <b>Next.js</b>, <b>Node.js</b> y explorando el potencial de <b>Astro</b>.
   </p>
 </div>
 
