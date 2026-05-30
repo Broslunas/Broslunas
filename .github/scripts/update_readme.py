@@ -57,30 +57,44 @@ def main():
     root = ET.fromstring(xml_data)
     items = root.findall('.//item')
 
-    # Template for large items with side image and text
-    card_format = """<table width="100%" border="0">
+    project_card_format = """<table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 20px;">
   <tr>
-    <td width="40%" align="center">
+    <td width="40%" align="center" valign="middle">
       <a href="{url}" target="_blank">
-        <img src="{image}" width="100%" style="max-width: 400px; border-radius:10px; margin: 10px;" alt="{title}"/>
+        <img src="{image}" width="100%" style="max-width: 380px; border-radius: 12px; border: 1px solid #30363d; box-shadow: 0 4px 12px rgba(0,0,0,0.15); object-fit: cover;" alt="{title}"/>
       </a>
     </td>
-    <td width="60%">
-      <h3><a href="{url}" target="_blank">{title}</a></h3>
-      <p>📅 <strong>{date}</strong></p>
-      <p>{desc}</p>
+    <td width="60%" valign="top" style="padding-left: 20px;">
+      <h3><a href="{url}" target="_blank" style="color: #58a6ff; text-decoration: none;">✨ {title}</a></h3>
+      <p style="color: #8b949e; font-size: 0.9em; margin: 4px 0 10px 0;">📅 <strong>{date}</strong></p>
+      <p style="color: #c9d1d9; line-height: 1.5;">{desc}</p>
     </td>
   </tr>
 </table>"""
 
-    projects_html = extract_data(items, '/projects/', 3, card_format)
-    blog_html = extract_data(items, '/blog/', 3, card_format) # limited to 3 to not fill the whole screen
+    blog_card_format = """<table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 20px;">
+  <tr>
+    <td width="40%" align="center" valign="middle">
+      <a href="{url}" target="_blank">
+        <img src="{image}" width="100%" style="max-width: 380px; border-radius: 12px; border: 1px solid #30363d; box-shadow: 0 4px 12px rgba(0,0,0,0.15); object-fit: cover;" alt="{title}"/>
+      </a>
+    </td>
+    <td width="60%" valign="top" style="padding-left: 20px;">
+      <h3><a href="{url}" target="_blank" style="color: #ff7b72; text-decoration: none;">📝 {title}</a></h3>
+      <p style="color: #8b949e; font-size: 0.9em; margin: 4px 0 10px 0;">📅 <strong>{date}</strong></p>
+      <p style="color: #c9d1d9; line-height: 1.5;">{desc}</p>
+    </td>
+  </tr>
+</table>"""
+
+    projects_html = extract_data(items, '/projects/', 3, project_card_format)
+    blog_html = extract_data(items, '/blog/', 3, blog_card_format) # limited to 3 to not fill the whole screen
     
     # Extract certs explicitly to make a grid (3 columns per row)
-    certs_tds = extract_data(items, '/certificates/', 6, '<td align="center" valign="top" width="33%"><a href="{url}" target="_blank"><img src="{image}" height="100" title="{title}" style="border-radius:8px;"/></a><br/><br/><b>{title}</b><br/>{date}</td>')
+    certs_tds = extract_data(items, '/certificates/', 6, '<td align="center" valign="top" width="33%" style="padding: 15px;"><a href="{url}" target="_blank"><img src="{image}" height="110" title="{title}" style="border-radius: 10px; border: 1px solid #30363d; box-shadow: 0 4px 8px rgba(0,0,0,0.2);"/></a><br/><br/><strong style="color: #adbac7; font-size: 0.95em;">{title}</strong><br/><span style="color: #768390; font-size: 0.85em;">{date}</span></td>')
     certs_list = certs_tds.split('\n')
     
-    certs_html = "<table>"
+    certs_html = '<table width="100%" border="0" cellpadding="0" cellspacing="0">'
     for i, td in enumerate(certs_list):
         if i % 3 == 0:
             if i > 0: certs_html += "</tr>"
