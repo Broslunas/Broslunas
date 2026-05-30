@@ -67,96 +67,136 @@
 ---
 
 ### 🚀 Proyectos Destacados
-<div align="center">
 <!-- projects:start -->
-<table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 20px;">
+<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin-bottom: 20px; border: 1px solid #30363d; border-radius: 10px; overflow: hidden; background: #0d1117;">
   <tr>
-    <td width="40%" align="center" valign="middle">
-      <a href="https://broslunas.com/projects/impresoras-veredillasfm/" target="_blank">
-        <img src="https://cdn.broslunas.com/projects/vfm-impresoras.webp" width="100%" style="max-width: 380px; border-radius: 12px; border: 1px solid #30363d; box-shadow: 0 4px 12px rgba(0,0,0,0.15); object-fit: cover;" alt="VeredillasFM Impresiones 3D"/>
-      </a>
-    </td>
-    <td width="60%" valign="top" style="padding-left: 20px;">
-      <h3><a href="https://broslunas.com/projects/impresoras-veredillasfm/" target="_blank" style="color: #58a6ff; text-decoration: none;">✨ VeredillasFM Impresiones 3D</a></h3>
-      <p style="color: #8b949e; font-size: 0.9em; margin: 4px 0 10px 0;">📅 <strong>06/04/2026</strong></p>
-      <p style="color: #c9d1d9; line-height: 1.5;">Infraestructura de micro-servicios para la gestión de impresión 3D bajo demanda, integrada con el ecosistema Veredillas FM y automatizada mediante ...</p>
+    <td width="5" bgcolor="#bc52ee" style="padding: 0px;"></td>
+    <td style="padding: 20px;">
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td valign="top">
+            <h3><a href="https://broslunas.com/projects/impresoras-veredillasfm/" target="_blank" style="color: #bc52ee; text-decoration: none;">🚀 VeredillasFM Impresiones 3D</a></h3>
+            <p style="color: #8b949e; font-size: 0.85em; margin: 5px 0;">📅 <strong>06/04/2026</strong></p>
+            <p style="color: #c9d1d9; font-size: 0.95em; line-height: 1.5; margin-top: 10px;">Infraestructura de micro-servicios para la gestión de impresión 3D bajo demanda, integrada con el ecosistema Veredillas FM y automatizada mediante ...</p>
+          </td>
+          <td width="160" align="right" valign="middle" style="padding-left: 20px;">
+            <a href="https://broslunas.com/projects/impresoras-veredillasfm/" target="_blank">
+              <img src="https://cdn.broslunas.com/projects/vfm-impresoras.webp" width="150" style="border-radius: 8px; object-fit: cover; aspect-ratio: 16/10; border: 1px solid #30363d;" alt="VeredillasFM Impresiones 3D"/>
+            </a>
+          </td>
+        </tr>
+      </table>
     </td>
   </tr>
 </table>
-<table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 20px;">
+<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin-bottom: 20px; border: 1px solid #30363d; border-radius: 10px; overflow: hidden; background: #0d1117;">
   <tr>
-    <td width="40%" align="center" valign="middle">
-      <a href="https://broslunas.com/projects/cms/" target="_blank">
-        <img src="https://cdn.broslunas.com/projects/brl-cms.png" width="100%" style="max-width: 380px; border-radius: 12px; border: 1px solid #30363d; box-shadow: 0 4px 12px rgba(0,0,0,0.15); object-fit: cover;" alt="Broslunas CMS"/>
-      </a>
-    </td>
-    <td width="60%" valign="top" style="padding-left: 20px;">
-      <h3><a href="https://broslunas.com/projects/cms/" target="_blank" style="color: #58a6ff; text-decoration: none;">✨ Broslunas CMS</a></h3>
-      <p style="color: #8b949e; font-size: 0.9em; margin: 4px 0 10px 0;">📅 <strong>07/02/2026</strong></p>
-      <p style="color: #c9d1d9; line-height: 1.5;">Descubre Broslunas CMS, el revolucionario sistema de gestión de contenidos para Astro. Simplifica la creación de contenidos, automatiza las impleme...</p>
+    <td width="5" bgcolor="#bc52ee" style="padding: 0px;"></td>
+    <td style="padding: 20px;">
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td valign="top">
+            <h3><a href="https://broslunas.com/projects/cms/" target="_blank" style="color: #bc52ee; text-decoration: none;">🚀 Broslunas CMS</a></h3>
+            <p style="color: #8b949e; font-size: 0.85em; margin: 5px 0;">📅 <strong>07/02/2026</strong></p>
+            <p style="color: #c9d1d9; font-size: 0.95em; line-height: 1.5; margin-top: 10px;">Descubre Broslunas CMS, el revolucionario sistema de gestión de contenidos para Astro. Simplifica la creación de contenidos, automatiza las impleme...</p>
+          </td>
+          <td width="160" align="right" valign="middle" style="padding-left: 20px;">
+            <a href="https://broslunas.com/projects/cms/" target="_blank">
+              <img src="https://cdn.broslunas.com/projects/brl-cms.png" width="150" style="border-radius: 8px; object-fit: cover; aspect-ratio: 16/10; border: 1px solid #30363d;" alt="Broslunas CMS"/>
+            </a>
+          </td>
+        </tr>
+      </table>
     </td>
   </tr>
 </table>
-<table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 20px;">
+<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin-bottom: 20px; border: 1px solid #30363d; border-radius: 10px; overflow: hidden; background: #0d1117;">
   <tr>
-    <td width="40%" align="center" valign="middle">
-      <a href="https://broslunas.com/projects/veredillasfm/" target="_blank">
-        <img src="https://cdn.broslunas.com/projects/veredillasfm.webp" width="100%" style="max-width: 380px; border-radius: 12px; border: 1px solid #30363d; box-shadow: 0 4px 12px rgba(0,0,0,0.15); object-fit: cover;" alt="Veredillas FM"/>
-      </a>
-    </td>
-    <td width="60%" valign="top" style="padding-left: 20px;">
-      <h3><a href="https://broslunas.com/projects/veredillasfm/" target="_blank" style="color: #58a6ff; text-decoration: none;">✨ Veredillas FM</a></h3>
-      <p style="color: #8b949e; font-size: 0.9em; margin: 4px 0 10px 0;">📅 <strong>31/01/2026</strong></p>
-      <p style="color: #c9d1d9; line-height: 1.5;">La plataforma oficial de podcast y radio digital del IES Veredillas. Ecosistema digital completo con streaming, gestión de comunidad y automatizaci...</p>
+    <td width="5" bgcolor="#bc52ee" style="padding: 0px;"></td>
+    <td style="padding: 20px;">
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td valign="top">
+            <h3><a href="https://broslunas.com/projects/veredillasfm/" target="_blank" style="color: #bc52ee; text-decoration: none;">🚀 Veredillas FM</a></h3>
+            <p style="color: #8b949e; font-size: 0.85em; margin: 5px 0;">📅 <strong>31/01/2026</strong></p>
+            <p style="color: #c9d1d9; font-size: 0.95em; line-height: 1.5; margin-top: 10px;">La plataforma oficial de podcast y radio digital del IES Veredillas. Ecosistema digital completo con streaming, gestión de comunidad y automatizaci...</p>
+          </td>
+          <td width="160" align="right" valign="middle" style="padding-left: 20px;">
+            <a href="https://broslunas.com/projects/veredillasfm/" target="_blank">
+              <img src="https://cdn.broslunas.com/projects/veredillasfm.webp" width="150" style="border-radius: 8px; object-fit: cover; aspect-ratio: 16/10; border: 1px solid #30363d;" alt="Veredillas FM"/>
+            </a>
+          </td>
+        </tr>
+      </table>
     </td>
   </tr>
 </table>
 <!-- projects:end -->
-</div>
 
 ---
 
 ### 📝 Últimos Artículos
 <!-- blog:start -->
-<table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 20px;">
+<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin-bottom: 20px; border: 1px solid #30363d; border-radius: 10px; overflow: hidden; background: #0d1117;">
   <tr>
-    <td width="40%" align="center" valign="middle">
-      <a href="https://broslunas.com/blog/lanzamiento-impresoras-veredillasfm/" target="_blank">
-        <img src="https://cdn.broslunas.com/projects/vfm-impresoras.webp" width="100%" style="max-width: 380px; border-radius: 12px; border: 1px solid #30363d; box-shadow: 0 4px 12px rgba(0,0,0,0.15); object-fit: cover;" alt="¡Lanzamos VeredillasFM Impresiones 3D!"/>
-      </a>
-    </td>
-    <td width="60%" valign="top" style="padding-left: 20px;">
-      <h3><a href="https://broslunas.com/blog/lanzamiento-impresoras-veredillasfm/" target="_blank" style="color: #ff7b72; text-decoration: none;">📝 ¡Lanzamos VeredillasFM Impresiones 3D!</a></h3>
-      <p style="color: #8b949e; font-size: 0.9em; margin: 4px 0 10px 0;">📅 <strong>06/04/2026</strong></p>
-      <p style="color: #c9d1d9; line-height: 1.5;">Ampliamos el ecosistema de Veredillas FM con un nuevo servicio de impresión 3D para toda la comunidad educativa del IES Las Veredillas.</p>
+    <td width="5" bgcolor="#38bdf8" style="padding: 0px;"></td>
+    <td style="padding: 20px;">
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td valign="top">
+            <h3><a href="https://broslunas.com/blog/lanzamiento-impresoras-veredillasfm/" target="_blank" style="color: #38bdf8; text-decoration: none;">📝 ¡Lanzamos VeredillasFM Impresiones 3D!</a></h3>
+            <p style="color: #8b949e; font-size: 0.85em; margin: 5px 0;">📅 <strong>06/04/2026</strong></p>
+            <p style="color: #c9d1d9; font-size: 0.95em; line-height: 1.5; margin-top: 10px;">Ampliamos el ecosistema de Veredillas FM con un nuevo servicio de impresión 3D para toda la comunidad educativa del IES Las Veredillas.</p>
+          </td>
+          <td width="160" align="right" valign="middle" style="padding-left: 20px;">
+            <a href="https://broslunas.com/blog/lanzamiento-impresoras-veredillasfm/" target="_blank">
+              <img src="https://cdn.broslunas.com/projects/vfm-impresoras.webp" width="150" style="border-radius: 8px; object-fit: cover; aspect-ratio: 16/10; border: 1px solid #30363d;" alt="¡Lanzamos VeredillasFM Impresiones 3D!"/>
+            </a>
+          </td>
+        </tr>
+      </table>
     </td>
   </tr>
 </table>
-<table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 20px;">
+<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin-bottom: 20px; border: 1px solid #30363d; border-radius: 10px; overflow: hidden; background: #0d1117;">
   <tr>
-    <td width="40%" align="center" valign="middle">
-      <a href="https://broslunas.com/blog/broslunas-cms/" target="_blank">
-        <img src="https://cdn.broslunas.com/projects/brl-cms.png" width="100%" style="max-width: 380px; border-radius: 12px; border: 1px solid #30363d; box-shadow: 0 4px 12px rgba(0,0,0,0.15); object-fit: cover;" alt="Broslunas CMS: El Futuro de la Gestión de Contenido para Astro"/>
-      </a>
-    </td>
-    <td width="60%" valign="top" style="padding-left: 20px;">
-      <h3><a href="https://broslunas.com/blog/broslunas-cms/" target="_blank" style="color: #ff7b72; text-decoration: none;">📝 Broslunas CMS: El Futuro de la Gestión de Contenido para Astro</a></h3>
-      <p style="color: #8b949e; font-size: 0.9em; margin: 4px 0 10px 0;">📅 <strong>07/02/2026</strong></p>
-      <p style="color: #c9d1d9; line-height: 1.5;">Descubre Broslunas CMS, el sistema de gestión de contenido diseñado para simplificar la creación y gestión de sitios web y aplicaciones Astro. Inte...</p>
+    <td width="5" bgcolor="#38bdf8" style="padding: 0px;"></td>
+    <td style="padding: 20px;">
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td valign="top">
+            <h3><a href="https://broslunas.com/blog/broslunas-cms/" target="_blank" style="color: #38bdf8; text-decoration: none;">📝 Broslunas CMS: El Futuro de la Gestión de Contenido para Astro</a></h3>
+            <p style="color: #8b949e; font-size: 0.85em; margin: 5px 0;">📅 <strong>07/02/2026</strong></p>
+            <p style="color: #c9d1d9; font-size: 0.95em; line-height: 1.5; margin-top: 10px;">Descubre Broslunas CMS, el sistema de gestión de contenido diseñado para simplificar la creación y gestión de sitios web y aplicaciones Astro. Inte...</p>
+          </td>
+          <td width="160" align="right" valign="middle" style="padding-left: 20px;">
+            <a href="https://broslunas.com/blog/broslunas-cms/" target="_blank">
+              <img src="https://cdn.broslunas.com/projects/brl-cms.png" width="150" style="border-radius: 8px; object-fit: cover; aspect-ratio: 16/10; border: 1px solid #30363d;" alt="Broslunas CMS: El Futuro de la Gestión de Contenido para Astro"/>
+            </a>
+          </td>
+        </tr>
+      </table>
     </td>
   </tr>
 </table>
-<table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 20px;">
+<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin-bottom: 20px; border: 1px solid #30363d; border-radius: 10px; overflow: hidden; background: #0d1117;">
   <tr>
-    <td width="40%" align="center" valign="middle">
-      <a href="https://broslunas.com/blog/lanzamiento-veredillasfm/" target="_blank">
-        <img src="https://cdn.broslunas.com/blog/veredillasfm.webp" width="100%" style="max-width: 380px; border-radius: 12px; border: 1px solid #30363d; box-shadow: 0 4px 12px rgba(0,0,0,0.15); object-fit: cover;" alt="Veredillas FM: Reinventando la radio de tu insti"/>
-      </a>
-    </td>
-    <td width="60%" valign="top" style="padding-left: 20px;">
-      <h3><a href="https://broslunas.com/blog/lanzamiento-veredillasfm/" target="_blank" style="color: #ff7b72; text-decoration: none;">📝 Veredillas FM: Reinventando la radio de tu insti</a></h3>
-      <p style="color: #8b949e; font-size: 0.9em; margin: 4px 0 10px 0;">📅 <strong>31/01/2026</strong></p>
-      <p style="color: #c9d1d9; line-height: 1.5;">Te presento la nueva web de Veredillas FM. Mucho más que escuchar podcasts: chat en directo, noticias y una comunidad para todos.</p>
+    <td width="5" bgcolor="#38bdf8" style="padding: 0px;"></td>
+    <td style="padding: 20px;">
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td valign="top">
+            <h3><a href="https://broslunas.com/blog/lanzamiento-veredillasfm/" target="_blank" style="color: #38bdf8; text-decoration: none;">📝 Veredillas FM: Reinventando la radio de tu insti</a></h3>
+            <p style="color: #8b949e; font-size: 0.85em; margin: 5px 0;">📅 <strong>31/01/2026</strong></p>
+            <p style="color: #c9d1d9; font-size: 0.95em; line-height: 1.5; margin-top: 10px;">Te presento la nueva web de Veredillas FM. Mucho más que escuchar podcasts: chat en directo, noticias y una comunidad para todos.</p>
+          </td>
+          <td width="160" align="right" valign="middle" style="padding-left: 20px;">
+            <a href="https://broslunas.com/blog/lanzamiento-veredillasfm/" target="_blank">
+              <img src="https://cdn.broslunas.com/blog/veredillasfm.webp" width="150" style="border-radius: 8px; object-fit: cover; aspect-ratio: 16/10; border: 1px solid #30363d;" alt="Veredillas FM: Reinventando la radio de tu insti"/>
+            </a>
+          </td>
+        </tr>
+      </table>
     </td>
   </tr>
 </table>
@@ -165,11 +205,9 @@
 ---
 
 ### 🎓 Certificaciones Recientes
-<div align="center">
 <!-- certs:start -->
-<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td align="center" valign="top" width="33%" style="padding: 15px;"><a href="https://broslunas.com/certificates/desarrollo-web-con-ia/" target="_blank"><img src="https://cdn.broslunas.com/certificates/intro-ia-para-devs.png" height="110" title="Desarrollo Web con IA" style="border-radius: 10px; border: 1px solid #30363d; box-shadow: 0 4px 8px rgba(0,0,0,0.2);"/></a><br/><br/><strong style="color: #adbac7; font-size: 0.95em;">Desarrollo Web con IA</strong><br/><span style="color: #768390; font-size: 0.85em;">21/05/2026</span></td><td align="center" valign="top" width="33%" style="padding: 15px;"><a href="https://broslunas.com/certificates/intro-ia-para-devs/" target="_blank"><img src="https://cdn.broslunas.com/certificates/intro-ia-para-devs.png" height="110" title="Introducción a la IA para Developers" style="border-radius: 10px; border: 1px solid #30363d; box-shadow: 0 4px 8px rgba(0,0,0,0.2);"/></a><br/><br/><strong style="color: #adbac7; font-size: 0.95em;">Introducción a la IA para Developers</strong><br/><span style="color: #768390; font-size: 0.85em;">20/05/2026</span></td><td align="center" valign="top" width="33%" style="padding: 15px;"><a href="https://broslunas.com/certificates/cibersecurity-google/" target="_blank"><img src="https://cdn.broslunas.com/certificates/cibersecurity-google.png" height="110" title="Google Cybersecurity" style="border-radius: 10px; border: 1px solid #30363d; box-shadow: 0 4px 8px rgba(0,0,0,0.2);"/></a><br/><br/><strong style="color: #adbac7; font-size: 0.95em;">Google Cybersecurity</strong><br/><span style="color: #768390; font-size: 0.85em;">19/09/2025</span></td></tr><tr><td align="center" valign="top" width="33%" style="padding: 15px;"><a href="https://broslunas.com/certificates/figma-desde-0/" target="_blank"><img src="https://cdn.broslunas.com/certificates/figma-desde-0.png" height="110" title="Figma Desde 0" style="border-radius: 10px; border: 1px solid #30363d; box-shadow: 0 4px 8px rgba(0,0,0,0.2);"/></a><br/><br/><strong style="color: #adbac7; font-size: 0.95em;">Figma Desde 0</strong><br/><span style="color: #768390; font-size: 0.85em;">16/07/2025</span></td><td align="center" valign="top" width="33%" style="padding: 15px;"><a href="https://broslunas.com/certificates/css-desde-0/" target="_blank"><img src="https://cdn.broslunas.com/certificates/css-desde-0.png" height="110" title="CSS Desde 0" style="border-radius: 10px; border: 1px solid #30363d; box-shadow: 0 4px 8px rgba(0,0,0,0.2);"/></a><br/><br/><strong style="color: #adbac7; font-size: 0.95em;">CSS Desde 0</strong><br/><span style="color: #768390; font-size: 0.85em;">12/07/2025</span></td><td align="center" valign="top" width="33%" style="padding: 15px;"><a href="https://broslunas.com/certificates/html-desde-0/" target="_blank"><img src="https://cdn.broslunas.com/certificates/html-desde-0.png" height="110" title="HTML desde 0" style="border-radius: 10px; border: 1px solid #30363d; box-shadow: 0 4px 8px rgba(0,0,0,0.2);"/></a><br/><br/><strong style="color: #adbac7; font-size: 0.95em;">HTML desde 0</strong><br/><span style="color: #768390; font-size: 0.85em;">11/07/2025</span></td></tr></table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td align="center" valign="top" width="33%" style="padding: 10px;"><table width="100%" style="border-collapse: collapse; border: 1px solid #30363d; border-radius: 10px; background-color: #0d1117;"><tr><td align="center" style="padding: 20px 10px;"><a href="https://broslunas.com/certificates/desarrollo-web-con-ia/" target="_blank"><img src="https://cdn.broslunas.com/certificates/intro-ia-para-devs.png" height="90" title="Desarrollo Web con IA" style="border-radius: 8px; border: 1px solid #30363d; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));"/></a><br/><br/><strong style="color: #adbac7; font-size: 0.9em; display: block; min-height: 40px; line-height: 1.3;">Desarrollo Web con IA</strong><br/><span style="color: #768390; font-size: 0.8em; display: block; margin-top: 5px;">📅 21/05/2026</span></td></tr></table></td><td align="center" valign="top" width="33%" style="padding: 10px;"><table width="100%" style="border-collapse: collapse; border: 1px solid #30363d; border-radius: 10px; background-color: #0d1117;"><tr><td align="center" style="padding: 20px 10px;"><a href="https://broslunas.com/certificates/intro-ia-para-devs/" target="_blank"><img src="https://cdn.broslunas.com/certificates/intro-ia-para-devs.png" height="90" title="Introducción a la IA para Developers" style="border-radius: 8px; border: 1px solid #30363d; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));"/></a><br/><br/><strong style="color: #adbac7; font-size: 0.9em; display: block; min-height: 40px; line-height: 1.3;">Introducción a la IA para Developers</strong><br/><span style="color: #768390; font-size: 0.8em; display: block; margin-top: 5px;">📅 20/05/2026</span></td></tr></table></td><td align="center" valign="top" width="33%" style="padding: 10px;"><table width="100%" style="border-collapse: collapse; border: 1px solid #30363d; border-radius: 10px; background-color: #0d1117;"><tr><td align="center" style="padding: 20px 10px;"><a href="https://broslunas.com/certificates/cibersecurity-google/" target="_blank"><img src="https://cdn.broslunas.com/certificates/cibersecurity-google.png" height="90" title="Google Cybersecurity" style="border-radius: 8px; border: 1px solid #30363d; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));"/></a><br/><br/><strong style="color: #adbac7; font-size: 0.9em; display: block; min-height: 40px; line-height: 1.3;">Google Cybersecurity</strong><br/><span style="color: #768390; font-size: 0.8em; display: block; margin-top: 5px;">📅 19/09/2025</span></td></tr></table></td></tr><tr><td align="center" valign="top" width="33%" style="padding: 10px;"><table width="100%" style="border-collapse: collapse; border: 1px solid #30363d; border-radius: 10px; background-color: #0d1117;"><tr><td align="center" style="padding: 20px 10px;"><a href="https://broslunas.com/certificates/figma-desde-0/" target="_blank"><img src="https://cdn.broslunas.com/certificates/figma-desde-0.png" height="90" title="Figma Desde 0" style="border-radius: 8px; border: 1px solid #30363d; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));"/></a><br/><br/><strong style="color: #adbac7; font-size: 0.9em; display: block; min-height: 40px; line-height: 1.3;">Figma Desde 0</strong><br/><span style="color: #768390; font-size: 0.8em; display: block; margin-top: 5px;">📅 16/07/2025</span></td></tr></table></td><td align="center" valign="top" width="33%" style="padding: 10px;"><table width="100%" style="border-collapse: collapse; border: 1px solid #30363d; border-radius: 10px; background-color: #0d1117;"><tr><td align="center" style="padding: 20px 10px;"><a href="https://broslunas.com/certificates/css-desde-0/" target="_blank"><img src="https://cdn.broslunas.com/certificates/css-desde-0.png" height="90" title="CSS Desde 0" style="border-radius: 8px; border: 1px solid #30363d; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));"/></a><br/><br/><strong style="color: #adbac7; font-size: 0.9em; display: block; min-height: 40px; line-height: 1.3;">CSS Desde 0</strong><br/><span style="color: #768390; font-size: 0.8em; display: block; margin-top: 5px;">📅 12/07/2025</span></td></tr></table></td><td align="center" valign="top" width="33%" style="padding: 10px;"><table width="100%" style="border-collapse: collapse; border: 1px solid #30363d; border-radius: 10px; background-color: #0d1117;"><tr><td align="center" style="padding: 20px 10px;"><a href="https://broslunas.com/certificates/html-desde-0/" target="_blank"><img src="https://cdn.broslunas.com/certificates/html-desde-0.png" height="90" title="HTML desde 0" style="border-radius: 8px; border: 1px solid #30363d; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));"/></a><br/><br/><strong style="color: #adbac7; font-size: 0.9em; display: block; min-height: 40px; line-height: 1.3;">HTML desde 0</strong><br/><span style="color: #768390; font-size: 0.8em; display: block; margin-top: 5px;">📅 11/07/2025</span></td></tr></table></td></tr></table>
 <!-- certs:end -->
-</div>
 
 ---
 

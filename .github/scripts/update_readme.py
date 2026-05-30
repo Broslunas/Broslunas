@@ -57,32 +57,46 @@ def main():
     root = ET.fromstring(xml_data)
     items = root.findall('.//item')
 
-    project_card_format = """<table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 20px;">
+    project_card_format = """<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin-bottom: 20px; border: 1px solid #30363d; border-radius: 10px; overflow: hidden; background: #0d1117;">
   <tr>
-    <td width="40%" align="center" valign="middle">
-      <a href="{url}" target="_blank">
-        <img src="{image}" width="100%" style="max-width: 380px; border-radius: 12px; border: 1px solid #30363d; box-shadow: 0 4px 12px rgba(0,0,0,0.15); object-fit: cover;" alt="{title}"/>
-      </a>
-    </td>
-    <td width="60%" valign="top" style="padding-left: 20px;">
-      <h3><a href="{url}" target="_blank" style="color: #58a6ff; text-decoration: none;">✨ {title}</a></h3>
-      <p style="color: #8b949e; font-size: 0.9em; margin: 4px 0 10px 0;">📅 <strong>{date}</strong></p>
-      <p style="color: #c9d1d9; line-height: 1.5;">{desc}</p>
+    <td width="5" bgcolor="#bc52ee" style="padding: 0px;"></td>
+    <td style="padding: 20px;">
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td valign="top">
+            <h3><a href="{url}" target="_blank" style="color: #bc52ee; text-decoration: none;">🚀 {title}</a></h3>
+            <p style="color: #8b949e; font-size: 0.85em; margin: 5px 0;">📅 <strong>{date}</strong></p>
+            <p style="color: #c9d1d9; font-size: 0.95em; line-height: 1.5; margin-top: 10px;">{desc}</p>
+          </td>
+          <td width="160" align="right" valign="middle" style="padding-left: 20px;">
+            <a href="{url}" target="_blank">
+              <img src="{image}" width="150" style="border-radius: 8px; object-fit: cover; aspect-ratio: 16/10; border: 1px solid #30363d;" alt="{title}"/>
+            </a>
+          </td>
+        </tr>
+      </table>
     </td>
   </tr>
 </table>"""
 
-    blog_card_format = """<table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 20px;">
+    blog_card_format = """<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin-bottom: 20px; border: 1px solid #30363d; border-radius: 10px; overflow: hidden; background: #0d1117;">
   <tr>
-    <td width="40%" align="center" valign="middle">
-      <a href="{url}" target="_blank">
-        <img src="{image}" width="100%" style="max-width: 380px; border-radius: 12px; border: 1px solid #30363d; box-shadow: 0 4px 12px rgba(0,0,0,0.15); object-fit: cover;" alt="{title}"/>
-      </a>
-    </td>
-    <td width="60%" valign="top" style="padding-left: 20px;">
-      <h3><a href="{url}" target="_blank" style="color: #ff7b72; text-decoration: none;">📝 {title}</a></h3>
-      <p style="color: #8b949e; font-size: 0.9em; margin: 4px 0 10px 0;">📅 <strong>{date}</strong></p>
-      <p style="color: #c9d1d9; line-height: 1.5;">{desc}</p>
+    <td width="5" bgcolor="#38bdf8" style="padding: 0px;"></td>
+    <td style="padding: 20px;">
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td valign="top">
+            <h3><a href="{url}" target="_blank" style="color: #38bdf8; text-decoration: none;">📝 {title}</a></h3>
+            <p style="color: #8b949e; font-size: 0.85em; margin: 5px 0;">📅 <strong>{date}</strong></p>
+            <p style="color: #c9d1d9; font-size: 0.95em; line-height: 1.5; margin-top: 10px;">{desc}</p>
+          </td>
+          <td width="160" align="right" valign="middle" style="padding-left: 20px;">
+            <a href="{url}" target="_blank">
+              <img src="{image}" width="150" style="border-radius: 8px; object-fit: cover; aspect-ratio: 16/10; border: 1px solid #30363d;" alt="{title}"/>
+            </a>
+          </td>
+        </tr>
+      </table>
     </td>
   </tr>
 </table>"""
@@ -91,7 +105,7 @@ def main():
     blog_html = extract_data(items, '/blog/', 3, blog_card_format) # limited to 3 to not fill the whole screen
     
     # Extract certs explicitly to make a grid (3 columns per row)
-    certs_tds = extract_data(items, '/certificates/', 6, '<td align="center" valign="top" width="33%" style="padding: 15px;"><a href="{url}" target="_blank"><img src="{image}" height="110" title="{title}" style="border-radius: 10px; border: 1px solid #30363d; box-shadow: 0 4px 8px rgba(0,0,0,0.2);"/></a><br/><br/><strong style="color: #adbac7; font-size: 0.95em;">{title}</strong><br/><span style="color: #768390; font-size: 0.85em;">{date}</span></td>')
+    certs_tds = extract_data(items, '/certificates/', 6, '<td align="center" valign="top" width="33%" style="padding: 10px;"><table width="100%" style="border-collapse: collapse; border: 1px solid #30363d; border-radius: 10px; background-color: #0d1117;"><tr><td align="center" style="padding: 20px 10px;"><a href="{url}" target="_blank"><img src="{image}" height="90" title="{title}" style="border-radius: 8px; border: 1px solid #30363d; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));"/></a><br/><br/><strong style="color: #adbac7; font-size: 0.9em; display: block; min-height: 40px; line-height: 1.3;">{title}</strong><br/><span style="color: #768390; font-size: 0.8em; display: block; margin-top: 5px;">📅 {date}</span></td></tr></table></td>')
     certs_list = certs_tds.split('\n')
     
     certs_html = '<table width="100%" border="0" cellpadding="0" cellspacing="0">'
