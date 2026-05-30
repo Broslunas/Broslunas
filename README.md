@@ -169,7 +169,6 @@
 ### 📈 GitHub Dashboard
 
 <div align="center">
-  <h4>🎮 Bomberman Contribution Graph</h4>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/broslunas/broslunas/pacman-output/bomberman-contribution-graph-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/broslunas/broslunas/pacman-output/bomberman-contribution-graph.svg">
