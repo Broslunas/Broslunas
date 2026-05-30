@@ -134,7 +134,6 @@
     <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/Broslunas/Broslunas/output/pacman-contribution-graph.svg" width="100%">
     <img src="https://raw.githubusercontent.com/broslunas/broslunas/stats-output/stats.svg" height="150" alt="stats graph"  />
     <img src="https://raw.githubusercontent.com/broslunas/broslunas/languages-output/languages.svg" height="150" alt="languages graph"  />
-    <img src="https://streak-stats.demolab.com?user=broslunas&locale=es&mode=weekly&theme=github_dark&hide_border=true&border_radius=5&order=3" height="150" alt="streak graph"  />
     <img src="https://raw.githubusercontent.com/broslunas/broslunas/trophy-output/trophy.svg" height="150" alt="trophy graph"  />
     <img src="https://raw.githubusercontent.com/broslunas/broslunas/activity-graph-output/activity-graph.svg" height="300" alt="activity-graph graph"  />
   </picture>
