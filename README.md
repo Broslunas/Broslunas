@@ -65,6 +65,20 @@
 <table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 20px;">
   <tr>
     <td width="40%" align="center" valign="middle">
+      <a href="https://broslunas.com/projects/divvy/" target="_blank">
+        <img src="https://broslunas.com/projects/divvy.png" width="100%" style="max-width: 380px; border-radius: 12px; border: 1px solid #30363d; box-shadow: 0 4px 12px rgba(0,0,0,0.15); object-fit: cover;" alt="Divvy"/>
+      </a>
+    </td>
+    <td width="60%" valign="top" style="padding-left: 20px;">
+      <h3><a href="https://broslunas.com/projects/divvy/" target="_blank" style="color: #58a6ff; text-decoration: none;">✨ Divvy</a></h3>
+      <p style="color: #8b949e; font-size: 0.9em; margin: 4px 0 10px 0;">📅 <strong>22/06/2026</strong></p>
+      <p style="color: #c9d1d9; line-height: 1.5;">Plataforma web y PWA para la gestión, división y liquidación inteligente de gastos compartidos en grupos, viajes y facturas.</p>
+    </td>
+  </tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 20px;">
+  <tr>
+    <td width="40%" align="center" valign="middle">
       <a href="https://broslunas.com/projects/impresoras-veredillasfm/" target="_blank">
         <img src="https://cdn.broslunas.com/projects/vfm-impresoras.webp" width="100%" style="max-width: 380px; border-radius: 12px; border: 1px solid #30363d; box-shadow: 0 4px 12px rgba(0,0,0,0.15); object-fit: cover;" alt="VeredillasFM Impresiones 3D"/>
       </a>
@@ -90,20 +104,6 @@
     </td>
   </tr>
 </table>
-<table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 20px;">
-  <tr>
-    <td width="40%" align="center" valign="middle">
-      <a href="https://broslunas.com/projects/veredillasfm/" target="_blank">
-        <img src="https://cdn.broslunas.com/projects/veredillasfm.webp" width="100%" style="max-width: 380px; border-radius: 12px; border: 1px solid #30363d; box-shadow: 0 4px 12px rgba(0,0,0,0.15); object-fit: cover;" alt="Veredillas FM"/>
-      </a>
-    </td>
-    <td width="60%" valign="top" style="padding-left: 20px;">
-      <h3><a href="https://broslunas.com/projects/veredillasfm/" target="_blank" style="color: #58a6ff; text-decoration: none;">✨ Veredillas FM</a></h3>
-      <p style="color: #8b949e; font-size: 0.9em; margin: 4px 0 10px 0;">📅 <strong>31/01/2026</strong></p>
-      <p style="color: #c9d1d9; line-height: 1.5;">La plataforma oficial de podcast y radio digital del IES Veredillas. Ecosistema digital completo con streaming, gestión de comunidad y automatizaci...</p>
-    </td>
-  </tr>
-</table>
 <!-- projects:end -->
 </div>
 
@@ -111,6 +111,20 @@
 
 ### 📝 Últimos Artículos
 <!-- blog:start -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 20px;">
+  <tr>
+    <td width="40%" align="center" valign="middle">
+      <a href="https://broslunas.com/blog/lanzamiento-divvy/" target="_blank">
+        <img src="https://broslunas.com/blog/divvy.png" width="100%" style="max-width: 380px; border-radius: 12px; border: 1px solid #30363d; box-shadow: 0 4px 12px rgba(0,0,0,0.15); object-fit: cover;" alt="Lanzamiento de Divvy: Gastos Compartidos y Cuentas Claras"/>
+      </a>
+    </td>
+    <td width="60%" valign="top" style="padding-left: 20px;">
+      <h3><a href="https://broslunas.com/blog/lanzamiento-divvy/" target="_blank" style="color: #ff7b72; text-decoration: none;">📝 Lanzamiento de Divvy: Gastos Compartidos y Cuentas Claras</a></h3>
+      <p style="color: #8b949e; font-size: 0.9em; margin: 4px 0 10px 0;">📅 <strong>22/06/2026</strong></p>
+      <p style="color: #c9d1d9; line-height: 1.5;">Presento mi nuevo proyecto personal, Divvy. Una web app y PWA inteligente diseñada para dividir gastos y simplificar deudas en grupo de forma autom...</p>
+    </td>
+  </tr>
+</table>
 <table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 20px;">
   <tr>
     <td width="40%" align="center" valign="middle">
@@ -136,20 +150,6 @@
       <h3><a href="https://broslunas.com/blog/broslunas-cms/" target="_blank" style="color: #ff7b72; text-decoration: none;">📝 Broslunas CMS: El Futuro de la Gestión de Contenido para Astro</a></h3>
       <p style="color: #8b949e; font-size: 0.9em; margin: 4px 0 10px 0;">📅 <strong>07/02/2026</strong></p>
       <p style="color: #c9d1d9; line-height: 1.5;">Descubre Broslunas CMS, el sistema de gestión de contenido diseñado para simplificar la creación y gestión de sitios web y aplicaciones Astro. Inte...</p>
-    </td>
-  </tr>
-</table>
-<table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 20px;">
-  <tr>
-    <td width="40%" align="center" valign="middle">
-      <a href="https://broslunas.com/blog/lanzamiento-veredillasfm/" target="_blank">
-        <img src="https://cdn.broslunas.com/blog/veredillasfm.webp" width="100%" style="max-width: 380px; border-radius: 12px; border: 1px solid #30363d; box-shadow: 0 4px 12px rgba(0,0,0,0.15); object-fit: cover;" alt="Veredillas FM: Reinventando la radio de tu insti"/>
-      </a>
-    </td>
-    <td width="60%" valign="top" style="padding-left: 20px;">
-      <h3><a href="https://broslunas.com/blog/lanzamiento-veredillasfm/" target="_blank" style="color: #ff7b72; text-decoration: none;">📝 Veredillas FM: Reinventando la radio de tu insti</a></h3>
-      <p style="color: #8b949e; font-size: 0.9em; margin: 4px 0 10px 0;">📅 <strong>31/01/2026</strong></p>
-      <p style="color: #c9d1d9; line-height: 1.5;">Te presento la nueva web de Veredillas FM. Mucho más que escuchar podcasts: chat en directo, noticias y una comunidad para todos.</p>
     </td>
   </tr>
 </table>
