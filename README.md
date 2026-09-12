@@ -2,13 +2,6 @@
   <img src="assets/banner.png" alt="Broslunas Banner" width="100%" style="border-radius: 12px; border: 1px solid #30363d;" />
 </p>
 
-<div align="center">
-  <a href="https://broslunas.com" target="_blank">
-    <img src="https://readme-typing-svg.demolab.com?font=Outfit&weight=600&size=24&pause=1000&color=BC52EE&center=true&vCenter=true&width=500&lines=Full-stack+Developer;UI%2FUX+%26+Performance+Enthusiast;React+%26+Next.js+Specialist;Building+Creative+Experiences+on+the+Web" alt="Typing SVG" />
-  </a>
-
-</div>
-
 ---
 
 ### 🛠️ Tecnologías y Herramientas
