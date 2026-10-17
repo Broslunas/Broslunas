@@ -187,9 +187,7 @@ def hero():
 <g>
   <text x="{P}" y="592" class="mono" font-size="20" font-weight="800" fill="{FG}">PABLO LUNA<tspan font-size="11" dy="-9" fill="{ACCENT}">®</tspan></text>
   <text x="{P}" y="622" class="mono" font-size="13" fill="{ACCENT}">&gt;&gt;&gt; DESARROLLADOR WEB FULL-STACK FREELANCE</text>
-  <text x="472" y="592" font-family="'JetBrains Mono',ui-monospace,monospace" font-size="21" fill="{FG}">Construyo aplicaciones web de principio a fin:</text>
-  <text x="472" y="620" font-family="'JetBrains Mono',ui-monospace,monospace" font-size="21" fill="{FG}">interfaz, API y datos.</text>
-  <text x="472" y="664" class="mono" font-size="12" fill="{DIM}"><tspan fill="{ACCENT}">//</tspan> NEXT.JS · ASTRO · TYPESCRIPT · NODE.JS · FIGMA</text>
+  <text x="472" y="622" class="mono" font-size="12" fill="{DIM}"><tspan fill="{ACCENT}">//</tspan> NEXT.JS · ASTRO · TYPESCRIPT · NODE.JS · FIGMA</text>
 </g>
 <rect width="{W}" height="{H}" filter="url(#grain)" opacity=".05"/>
 """
