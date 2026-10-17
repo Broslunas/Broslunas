@@ -2,13 +2,16 @@ name: Generate stats card
 
 on:
   schedule: # execute every 12 hours
-    - cron: "* */12 * * *"
+    - cron: "0 */12 * * *"
 
   workflow_dispatch:
 
   push:
     branches:
     - main
+    paths-ignore:
+    - "README.md"
+    - "assets/**"
 
 jobs:
   generate:
@@ -22,9 +25,9 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=github_dark&locale=es&hide_border=true
+          options: username=${{ github.repository_owner }}&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&locale=es&bg_color=0a0a0a&title_color=ff5a1f&text_color=eaeaea&icon_color=ff5a1f&ring_color=ff5a1f&hide_border=true
           path: dist/stats.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
 
 
       - name: push stats.svg to the output branch

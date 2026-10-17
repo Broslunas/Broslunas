@@ -2,13 +2,16 @@ name: Generate languages card
 
 on:
   schedule: # execute every 12 hours
-    - cron: "* */12 * * *"
+    - cron: "0 */12 * * *"
 
   workflow_dispatch:
 
   push:
     branches:
     - main
+    paths-ignore:
+    - "README.md"
+    - "assets/**"
 
 jobs:
   generate:
@@ -22,9 +25,9 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&locale=es&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=github_dark&hide_border=true
+          options: username=${{ github.repository_owner }}&locale=es&hide_title=false&layout=compact&card_width=320&langs_count=5&bg_color=0a0a0a&title_color=ff5a1f&text_color=eaeaea&icon_color=ff5a1f&ring_color=ff5a1f&hide_border=true
           path: dist/languages.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
 
 
       - name: push languages.svg to the output branch

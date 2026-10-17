@@ -1,24 +1,49 @@
 name: Update README
+
+# Pulls projects, blog posts and certificates from broslunas.com
+# (sitemap.xml, feed.xml and /es/certificates) and regenerates the SVG assets.
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: "0 6 * * *"
   workflow_dispatch:
+  # Lets the portfolio trigger a refresh right after publishing content:
+  # POST /repos/broslunas/broslunas/dispatches {"event_type":"portfolio-updated"}
+  repository_dispatch:
+    types: [portfolio-updated]
+  push:
+    branches: [main]
+    paths:
+      - ".github/scripts/**"
+      - ".github/workflows/blog-posts.yml"
+      - "assets/fonts/**"
+
+concurrency:
+  group: update-readme
+  cancel-in-progress: true
 
 jobs:
   update-readme:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
+    timeout-minutes: 5
+
     steps:
       - uses: actions/checkout@v4
 
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: "3.12"
 
-      - name: Update README with RSS
+      - name: Regenerate SVG assets
+        run: python .github/scripts/build_assets.py
+
+      - name: Update README from broslunas.com
         run: python .github/scripts/update_readme.py
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "UI: Fix images and sections"
+          commit_message: "chore(readme): sync with broslunas.com"
+          file_pattern: "README.md assets/*.svg assets/**/*.svg"

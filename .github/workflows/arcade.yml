@@ -2,13 +2,16 @@ name: Generate arcade animation
 
 on:
   schedule: # execute every 12 hours
-    - cron: "* */12 * * *"
+    - cron: "0 */12 * * *"
 
   workflow_dispatch:
 
   push:
     branches:
     - main
+    paths-ignore:
+    - "README.md"
+    - "assets/**"
 
 jobs:
   generate:

@@ -2,13 +2,16 @@ name: Update Activity Graph
 
 on:
   schedule: # execute every 12 hours
-    - cron: "* */12 * * *"
+    - cron: "0 */12 * * *"
 
   workflow_dispatch:
 
   push:
     branches:
     - main
+    paths-ignore:
+    - "README.md"
+    - "assets/**"
 
 jobs:
   build:
@@ -23,7 +26,7 @@ jobs:
         uses: maurodesouza/github-readme-activity-graph-action@v1
         with:
           username: ${{ github.repository_owner }}
-          options: radius=16&theme=dracula&area=true&bg_color=0d1117&hide_border=true&custom_title=Controbuciones%20de%20Broslunas&title_color=4b8eda&color=4b8eda&line=4b8eda&area_color=1c2e45&point=1f6feb
+          options: radius=0&area=true&bg_color=0a0a0a&hide_border=true&custom_title=Contribuciones%20de%20Broslunas&title_color=eaeaea&color=8a8a8a&line=ff5a1f&area_color=3a1608&point=ff5a1f
           output_path: dist/activity-graph.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
