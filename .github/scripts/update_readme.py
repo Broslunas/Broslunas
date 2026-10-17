@@ -56,7 +56,7 @@ def blog_html(limit=4):
             date = ""
         rows.append(
             f'<tr>\n<td width="18%" valign="top"><sub><code>{date}</code></sub></td>\n'
-            f'<td valign="top"><b><a href="{url}">{title}</a></b><br/><sub>{desc}</sub></td>\n</tr>'
+            f'<td valign="top"><b><a href="{url}" target="_blank" rel="noopener">{title}</a></b><br/><sub>{desc}</sub></td>\n</tr>'
         )
     return "<table>\n" + "\n".join(rows) + "\n</table>" if rows else ""
 
@@ -85,8 +85,8 @@ def projects_html(limit=3):
         date = fmt_date(datetime.fromisoformat(lastmod.replace("Z", "+00:00"))) if lastmod else ""
         meta = " · ".join(x for x in (f"{i + 1:02d}", date) if x)
         cells.append(
-            f'<td width="33%" valign="top">\n<a href="{loc}"><img src="{image}" width="100%" alt="{title}"/></a>\n'
-            f"<br/><sub><code>{meta}</code></sub>\n<br/><b><a href=\"{loc}\">{title}</a></b>\n<br/><sub>{desc}</sub>\n</td>"
+            f'<td width="33%" valign="top">\n<a href="{loc}" target="_blank" rel="noopener"><img src="{image}" width="100%" alt="{title}"/></a>\n'
+            f"<br/><sub><code>{meta}</code></sub>\n<br/><b><a href=\"{loc}\" target=\"_blank\" rel=\"noopener\">{title}</a></b>\n<br/><sub>{desc}</sub>\n</td>"
         )
     return grid(cells)
 
@@ -109,7 +109,7 @@ def certs_html(limit=6):
         date = fmt_date(datetime.fromisoformat(when.group(1))) if when else ""
         meta = " · ".join(x for x in (issuer.group(1).strip() if issuer else "", date) if x)
         cells.append(
-            f'<td width="33%" valign="top">\n<a href="{link.group(1)}"><img src="{html.escape(src)}" width="100%" alt="{title}"/></a>\n'
+            f'<td width="33%" valign="top">\n<a href="{link.group(1)}" target="_blank" rel="noopener"><img src="{html.escape(src)}" width="100%" alt="{title}"/></a>\n'
             f"<br/><b><sub>{title}</sub></b>\n<br/><sub><code>{meta}</code></sub>\n</td>"
         )
     return grid(cells)
