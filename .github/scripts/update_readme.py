@@ -1,120 +1,145 @@
+"""Fills the projects, blog and certificates blocks of README.md from broslunas.com.
+
+- Blog:          /feed.xml (RSS)
+- Projects:      /sitemap.xml + each project page's Open Graph tags
+- Certificates:  the cards on /es/certificates
+
+Cards mirror the site's look: 3-column grid and a mono meta line. GitHub strips
+inline styles, so only plain HTML attributes are used.
+"""
+import html
+import re
 import urllib.request
 import xml.etree.ElementTree as ET
-import re
-
+from datetime import datetime
 from email.utils import parsedate_to_datetime
 
-def extract_data(items, category, max_items, html_format):
-    res = []
-    for item in items:
-        link_elem = item.find('link')
-        if link_elem is None or not link_elem.text:
-            continue
-        link = link_elem.text.strip()
-        if category in link:
-            title_elem = item.find('title')
-            title = title_elem.text.strip() if title_elem is not None else ''
-            
-            img_elem = item.find('image')
-            image = img_elem.text.strip() if img_elem is not None else ''
-            
-            pub_date_elem = item.find('pubDate')
-            if pub_date_elem is not None and pub_date_elem.text:
-                try:
-                    dt = parsedate_to_datetime(pub_date_elem.text.strip())
-                    date = dt.strftime("%d/%m/%Y")
-                except:
-                    date = pub_date_elem.text.strip()[:16]
-            else:
-                date = ''
-                
-            desc_elem = item.find('description')
-            desc = desc_elem.text.strip() if desc_elem is not None else ''
-            # Truncate description if too long
-            if len(desc) > 150:
-                desc = desc[:147] + '...'
-            
-            res.append(html_format.format(url=link, title=title, image=image, date=date, desc=desc))
-            if len(res) >= max_items:
-                break
-    return '\n'.join(res)
+SITE = "https://www.broslunas.com"
+LANG = "es"
+UA = {"User-Agent": "Mozilla/5.0 (broslunas README bot)"}
 
-def replace_section(readme_text, start_tag, end_tag, new_content):
-    pattern = re.compile(f'({start_tag}).*?({end_tag})', re.DOTALL)
-    # Put the new content exactly between the tags
-    return pattern.sub(f'\\1\n{new_content}\n\\2', readme_text)
+
+def fetch(url):
+    req = urllib.request.Request(url, headers=UA)
+    with urllib.request.urlopen(req, timeout=30) as res:
+        return res.read().decode("utf-8")
+
+
+def truncate(text, n=140):
+    text = " ".join(text.split())
+    return text if len(text) <= n else text[: n - 1].rstrip() + "…"
+
+
+def fmt_date(dt):
+    return dt.strftime("%d.%m.%Y")
+
+
+def grid(cells, cols=3):
+    if not cells:
+        return ""
+    rows = [cells[i:i + cols] for i in range(0, len(cells), cols)]
+    return "<table>\n" + "\n".join("<tr>\n" + "\n".join(r) + "\n</tr>" for r in rows) + "\n</table>"
+
+
+# ------------------------------------------------------------------- blog
+
+def blog_html(limit=4):
+    root = ET.fromstring(fetch(f"{SITE}/feed.xml?lang={LANG}"))
+    rows = []
+    for item in root.findall(".//item")[:limit]:
+        title = html.escape(item.findtext("title", "").strip())
+        url = item.findtext("link", "").strip()
+        desc = html.escape(truncate(item.findtext("description", "")))
+        try:
+            date = fmt_date(parsedate_to_datetime(item.findtext("pubDate", "")))
+        except (TypeError, ValueError):
+            date = ""
+        rows.append(
+            f'<tr>\n<td width="18%" valign="top"><sub><code>{date}</code></sub></td>\n'
+            f'<td valign="top"><b><a href="{url}">{title}</a></b><br/><sub>{desc}</sub></td>\n</tr>'
+        )
+    return "<table>\n" + "\n".join(rows) + "\n</table>" if rows else ""
+
+
+# --------------------------------------------------------------- projects
+
+def og(page, prop):
+    m = re.search(rf'<meta property="og:{prop}" content="([^"]*)"', page)
+    return html.unescape(m.group(1)) if m else ""
+
+
+def projects_html(limit=3):
+    ns = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+    root = ET.fromstring(fetch(f"{SITE}/sitemap.xml"))
+    entries = []
+    for u in root.findall("s:url", ns):
+        loc = u.findtext("s:loc", "", ns)
+        if re.search(rf"/{LANG}/projects/[^/]+$", loc):
+            entries.append((loc, u.findtext("s:lastmod", "", ns)))
+    cells = []
+    for i, (loc, lastmod) in enumerate(entries[:limit]):
+        page = fetch(loc)
+        title = html.escape(og(page, "title"))
+        desc = html.escape(truncate(og(page, "description")))
+        image = html.escape(og(page, "image"))
+        date = fmt_date(datetime.fromisoformat(lastmod.replace("Z", "+00:00"))) if lastmod else ""
+        meta = " · ".join(x for x in (f"{i + 1:02d}", date) if x)
+        cells.append(
+            f'<td width="33%" valign="top">\n<a href="{loc}"><img src="{image}" width="100%" alt="{title}"/></a>\n'
+            f"<br/><sub><code>{meta}</code></sub>\n<br/><b><a href=\"{loc}\">{title}</a></b>\n<br/><sub>{desc}</sub>\n</td>"
+        )
+    return grid(cells)
+
+
+# ----------------------------------------------------------- certificates
+
+def certs_html(limit=6):
+    page = fetch(f"{SITE}/{LANG}/certificates")
+    cells = []
+    for art in re.findall(r"<article.*?</article>", page, re.S)[:limit]:
+        img = re.search(r'<img src="([^"]+)"', art)
+        link = re.search(r'<h3[^>]*><a href="([^"]+)"[^>]*>(.*?)</a>', art, re.S)
+        when = re.search(r'<time dateTime="([^"]+)"', art)
+        issuer = re.search(r'<p class="tag text-accent">(.*?)</p>', art)
+        if not (img and link):
+            continue
+        src = html.unescape(img.group(1))
+        src = src if src.startswith("http") else SITE + src
+        title = link.group(2).strip()
+        date = fmt_date(datetime.fromisoformat(when.group(1))) if when else ""
+        meta = " · ".join(x for x in (issuer.group(1).strip() if issuer else "", date) if x)
+        cells.append(
+            f'<td width="33%" valign="top">\n<a href="{link.group(1)}"><img src="{html.escape(src)}" width="100%" alt="{title}"/></a>\n'
+            f"<br/><b><sub>{title}</sub></b>\n<br/><sub><code>{meta}</code></sub>\n</td>"
+        )
+    return grid(cells)
+
+
+# ------------------------------------------------------------------ main
+
+def replace_section(text, name, content):
+    start, end = f"<!-- {name}:start -->", f"<!-- {name}:end -->"
+    pattern = re.compile(re.escape(start) + ".*?" + re.escape(end), re.S)
+    return pattern.sub(lambda _: f"{start}\n{content}\n{end}", text)
+
 
 def main():
-    url = "https://www.broslunas.com/rss.xml"
-    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-    try:
-        with urllib.request.urlopen(req) as response:
-            xml_data = response.read()
-    except Exception as e:
-        print(f"Failed to fetch RSS: {e}")
-        return
-
-    root = ET.fromstring(xml_data)
-    items = root.findall('.//item')
-
-    project_card_format = """<table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 20px;">
-  <tr>
-    <td width="40%" align="center" valign="middle">
-      <a href="{url}" target="_blank">
-        <img src="{image}" width="100%" style="max-width: 380px; border-radius: 12px; border: 1px solid #30363d; box-shadow: 0 4px 12px rgba(0,0,0,0.15); object-fit: cover;" alt="{title}"/>
-      </a>
-    </td>
-    <td width="60%" valign="top" style="padding-left: 20px;">
-      <h3><a href="{url}" target="_blank" style="color: #58a6ff; text-decoration: none;">✨ {title}</a></h3>
-      <p style="color: #8b949e; font-size: 0.9em; margin: 4px 0 10px 0;">📅 <strong>{date}</strong></p>
-      <p style="color: #c9d1d9; line-height: 1.5;">{desc}</p>
-    </td>
-  </tr>
-</table>"""
-
-    blog_card_format = """<table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 20px;">
-  <tr>
-    <td width="40%" align="center" valign="middle">
-      <a href="{url}" target="_blank">
-        <img src="{image}" width="100%" style="max-width: 380px; border-radius: 12px; border: 1px solid #30363d; box-shadow: 0 4px 12px rgba(0,0,0,0.15); object-fit: cover;" alt="{title}"/>
-      </a>
-    </td>
-    <td width="60%" valign="top" style="padding-left: 20px;">
-      <h3><a href="{url}" target="_blank" style="color: #ff7b72; text-decoration: none;">📝 {title}</a></h3>
-      <p style="color: #8b949e; font-size: 0.9em; margin: 4px 0 10px 0;">📅 <strong>{date}</strong></p>
-      <p style="color: #c9d1d9; line-height: 1.5;">{desc}</p>
-    </td>
-  </tr>
-</table>"""
-
-    projects_html = extract_data(items, '/projects/', 3, project_card_format)
-    blog_html = extract_data(items, '/blog/', 3, blog_card_format) # limited to 3 to not fill the whole screen
-    
-    # Extract certs explicitly to make a grid (3 columns per row)
-    certs_tds = extract_data(items, '/certificates/', 6, '<td align="center" valign="top" width="33%" style="padding: 15px;"><a href="{url}" target="_blank"><img src="{image}" height="110" title="{title}" style="border-radius: 10px; border: 1px solid #30363d; box-shadow: 0 4px 8px rgba(0,0,0,0.2);"/></a><br/><br/><strong style="color: #adbac7; font-size: 0.95em;">{title}</strong><br/><span style="color: #768390; font-size: 0.85em;">{date}</span></td>')
-    certs_list = certs_tds.split('\n')
-    
-    certs_html = '<table width="100%" border="0" cellpadding="0" cellspacing="0">'
-    for i, td in enumerate(certs_list):
-        if i % 3 == 0:
-            if i > 0: certs_html += "</tr>"
-            certs_html += "<tr>"
-        certs_html += td
-    if certs_list:
-        certs_html += "</tr>"
-    certs_html += "</table>"
-
-    with open('README.md', 'r', encoding='utf-8') as f:
+    with open("README.md", encoding="utf-8") as f:
         readme = f.read()
 
-    readme = replace_section(readme, '<!-- projects:start -->', '<!-- projects:end -->', projects_html)
-    readme = replace_section(readme, '<!-- blog:start -->', '<!-- blog:end -->', blog_html)
-    readme = replace_section(readme, '<!-- certs:start -->', '<!-- certs:end -->', certs_html)
+    for name, build in (("projects", projects_html), ("blog", blog_html), ("certs", certs_html)):
+        try:
+            content = build()
+        except Exception as e:  # keep the previous block if the site is unreachable
+            print(f"Skipping {name}: {e}")
+            continue
+        if content:
+            readme = replace_section(readme, name, content)
 
-    with open('README.md', 'w', encoding='utf-8') as f:
+    with open("README.md", "w", encoding="utf-8") as f:
         f.write(readme)
-        
     print("README.md updated successfully.")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

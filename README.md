@@ -1,201 +1,175 @@
-<p align="center">
-  <img src="assets/banner.png" alt="Broslunas Banner" width="100%" style="border-radius: 12px; border: 1px solid #30363d;" />
+<a href="https://broslunas.com">
+  <img src="assets/hero.svg" width="100%" alt="Broslunas — Pablo Luna, desarrollador web full-stack freelance" />
+</a>
+
+<p>
+  <a href="https://broslunas.com/es/contact"><img src="assets/buttons/start.svg" height="40" alt="Empezar un proyecto" /></a>
+  <a href="https://broslunas.com/cv/Pablo-Luna-CV-es.pdf"><img src="assets/buttons/cv.svg" height="40" alt="Descargar CV" /></a>
+  <a href="https://broslunas.com/es/call"><img src="assets/buttons/call.svg" height="40" alt="Agendar llamada" /></a>
 </p>
-
----
-
-### 🛠️ Tecnologías y Herramientas
-
-<table width="100%" border="0" cellpadding="0" cellspacing="0">
-  <tr>
-    <td width="33%" valign="top">
-      <strong>⚡ Core Frontend</strong>
-      <ul>
-        <li>HTML5 / CSS3</li>
-        <li>JavaScript (ES6+)</li>
-        <li>TypeScript</li>
-      </ul>
-    </td>
-    <td width="33%" valign="top">
-      <strong>🚀 Frameworks</strong>
-      <ul>
-        <li>React / Next.js</li>
-        <li>Astro</li>
-        <li>Node.js</li>
-      </ul>
-    </td>
-    <td width="34%" valign="top">
-      <strong>🎨 Diseño y Herramientas</strong>
-      <ul>
-        <li>Figma</li>
-        <li>Git / GitHub</li>
-        <li>UI/UX & Performance</li>
-      </ul>
-    </td>
-  </tr>
-</table>
 
 <br/>
 
-<div align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,astro,nodejs,figma,git,github" alt="My Skills Icons" />
-  </a>
-</div>
+<img src="assets/sections/work.svg" width="100%" alt="01 / Trabajo seleccionado" />
 
----
-
-### 🚀 Proyectos Destacados
-<div align="center">
 <!-- projects:start -->
-<table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 20px;">
-  <tr>
-    <td width="40%" align="center" valign="middle">
-      <a href="https://broslunas.com/projects/divvy/" target="_blank">
-        <img src="https://broslunas.com/projects/divvy.png" width="100%" style="max-width: 380px; border-radius: 12px; border: 1px solid #30363d; box-shadow: 0 4px 12px rgba(0,0,0,0.15); object-fit: cover;" alt="Divvy"/>
-      </a>
-    </td>
-    <td width="60%" valign="top" style="padding-left: 20px;">
-      <h3><a href="https://broslunas.com/projects/divvy/" target="_blank" style="color: #58a6ff; text-decoration: none;">✨ Divvy</a></h3>
-      <p style="color: #8b949e; font-size: 0.9em; margin: 4px 0 10px 0;">📅 <strong>22/06/2026</strong></p>
-      <p style="color: #c9d1d9; line-height: 1.5;">Plataforma web y PWA para la gestión, división y liquidación inteligente de gastos compartidos en grupos, viajes y facturas.</p>
-    </td>
-  </tr>
-</table>
-<table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 20px;">
-  <tr>
-    <td width="40%" align="center" valign="middle">
-      <a href="https://broslunas.com/projects/impresoras-veredillasfm/" target="_blank">
-        <img src="https://cdn.broslunas.com/projects/vfm-impresoras.webp" width="100%" style="max-width: 380px; border-radius: 12px; border: 1px solid #30363d; box-shadow: 0 4px 12px rgba(0,0,0,0.15); object-fit: cover;" alt="VeredillasFM Impresiones 3D"/>
-      </a>
-    </td>
-    <td width="60%" valign="top" style="padding-left: 20px;">
-      <h3><a href="https://broslunas.com/projects/impresoras-veredillasfm/" target="_blank" style="color: #58a6ff; text-decoration: none;">✨ VeredillasFM Impresiones 3D</a></h3>
-      <p style="color: #8b949e; font-size: 0.9em; margin: 4px 0 10px 0;">📅 <strong>06/04/2026</strong></p>
-      <p style="color: #c9d1d9; line-height: 1.5;">Infraestructura de micro-servicios para la gestión de impresión 3D bajo demanda, integrada con el ecosistema Veredillas FM y automatizada mediante ...</p>
-    </td>
-  </tr>
-</table>
-<table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 20px;">
-  <tr>
-    <td width="40%" align="center" valign="middle">
-      <a href="https://broslunas.com/projects/cms/" target="_blank">
-        <img src="https://cdn.broslunas.com/projects/brl-cms.png" width="100%" style="max-width: 380px; border-radius: 12px; border: 1px solid #30363d; box-shadow: 0 4px 12px rgba(0,0,0,0.15); object-fit: cover;" alt="Broslunas CMS"/>
-      </a>
-    </td>
-    <td width="60%" valign="top" style="padding-left: 20px;">
-      <h3><a href="https://broslunas.com/projects/cms/" target="_blank" style="color: #58a6ff; text-decoration: none;">✨ Broslunas CMS</a></h3>
-      <p style="color: #8b949e; font-size: 0.9em; margin: 4px 0 10px 0;">📅 <strong>07/02/2026</strong></p>
-      <p style="color: #c9d1d9; line-height: 1.5;">Descubre Broslunas CMS, el revolucionario sistema de gestión de contenidos para Astro. Simplifica la creación de contenidos, automatiza las impleme...</p>
-    </td>
-  </tr>
+<table>
+<tr>
+<td width="33%" valign="top">
+<a href="https://www.broslunas.com/es/projects/6ad35a898edc6949d0e2f356"><img src="https://www.broslunas.com/api/img?p=projects%2Fejecuta-tech-1w548uno7privMtLgbc0MPHDUtJ4qP.png" width="100%" alt="ejecuta.tech"/></a>
+<br/><sub><code>01</code></sub>
+<br/><b><a href="https://www.broslunas.com/es/projects/6ad35a898edc6949d0e2f356">ejecuta.tech</a></b>
+<br/><sub>Playground online para compilar y ejecutar código en el navegador: C++, Python, TypeScript, JavaScript, HTML y Bash.</sub>
+</td>
+<td width="33%" valign="top">
+<a href="https://www.broslunas.com/es/projects/6ad35a898edc6949d0e2f357"><img src="https://www.broslunas.com/api/img?p=projects%2Fpagalagasofa-qXROxnbTtSrvX9Qi4sinACKkpqGkyQ.png" width="100%" alt="PagaLaGasofa"/></a>
+<br/><sub><code>02</code></sub>
+<br/><b><a href="https://www.broslunas.com/es/projects/6ad35a898edc6949d0e2f357">PagaLaGasofa</a></b>
+<br/><sub>Calcula el coste de un viaje, repártelo entre los pasajeros y encuentra la gasolinera más barata de España.</sub>
+</td>
+<td width="33%" valign="top">
+<a href="https://www.broslunas.com/es/projects/6ad33dfd8ade78068f7eed9e"><img src="https://www.broslunas.com/api/img?p=projects%2Fveredillas-fm-cover-6mMcH6TISe6ZEHciS9SvpiHOFexygM.png" width="100%" alt="Veredillas FM"/></a>
+<br/><sub><code>03</code></sub>
+<br/><b><a href="https://www.broslunas.com/es/projects/6ad33dfd8ade78068f7eed9e">Veredillas FM</a></b>
+<br/><sub>Plataforma web de podcast y radio escolar del IES Las Veredillas: episodios por temporadas, radio en directo, blog, ranking de oyentes y cr…</sub>
+</td>
+</tr>
 </table>
 <!-- projects:end -->
-</div>
 
----
+<a href="https://broslunas.com/es/projects"><img src="assets/buttons/projects.svg" height="40" alt="Ver todos los proyectos" /></a>
 
-### 📝 Últimos Artículos
+<br/><br/>
+
+<img src="assets/sections/stack.svg" width="100%" alt="02 / Stack" />
+
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <sub><code>&lt; CORE &gt;</code></sub>
+      <br/><b>HTML · CSS · JavaScript · TypeScript</b>
+    </td>
+    <td width="33%" valign="top">
+      <sub><code>&lt; FRAMEWORKS &gt;</code></sub>
+      <br/><b>React · Next.js · Astro · Node.js</b>
+    </td>
+    <td width="34%" valign="top">
+      <sub><code>&lt; DISEÑO Y FLUJO &gt;</code></sub>
+      <br/><b>Figma · Git · GitHub · UI/UX · Performance</b>
+    </td>
+  </tr>
+</table>
+
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,astro,nodejs,figma,git,github&theme=dark" alt="Stack" />
+</a>
+
+<br/><br/>
+
+<img src="assets/sections/blog.svg" width="100%" alt="03 / Últimos posts" />
+
 <!-- blog:start -->
-<table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 20px;">
-  <tr>
-    <td width="40%" align="center" valign="middle">
-      <a href="https://broslunas.com/blog/lanzamiento-divvy/" target="_blank">
-        <img src="https://broslunas.com/blog/divvy.png" width="100%" style="max-width: 380px; border-radius: 12px; border: 1px solid #30363d; box-shadow: 0 4px 12px rgba(0,0,0,0.15); object-fit: cover;" alt="Lanzamiento de Divvy: Gastos Compartidos y Cuentas Claras"/>
-      </a>
-    </td>
-    <td width="60%" valign="top" style="padding-left: 20px;">
-      <h3><a href="https://broslunas.com/blog/lanzamiento-divvy/" target="_blank" style="color: #ff7b72; text-decoration: none;">📝 Lanzamiento de Divvy: Gastos Compartidos y Cuentas Claras</a></h3>
-      <p style="color: #8b949e; font-size: 0.9em; margin: 4px 0 10px 0;">📅 <strong>22/06/2026</strong></p>
-      <p style="color: #c9d1d9; line-height: 1.5;">Presento mi nuevo proyecto personal, Divvy. Una web app y PWA inteligente diseñada para dividir gastos y simplificar deudas en grupo de forma autom...</p>
-    </td>
-  </tr>
-</table>
-<table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 20px;">
-  <tr>
-    <td width="40%" align="center" valign="middle">
-      <a href="https://broslunas.com/blog/lanzamiento-impresoras-veredillasfm/" target="_blank">
-        <img src="https://cdn.broslunas.com/projects/vfm-impresoras.webp" width="100%" style="max-width: 380px; border-radius: 12px; border: 1px solid #30363d; box-shadow: 0 4px 12px rgba(0,0,0,0.15); object-fit: cover;" alt="¡Lanzamos VeredillasFM Impresiones 3D!"/>
-      </a>
-    </td>
-    <td width="60%" valign="top" style="padding-left: 20px;">
-      <h3><a href="https://broslunas.com/blog/lanzamiento-impresoras-veredillasfm/" target="_blank" style="color: #ff7b72; text-decoration: none;">📝 ¡Lanzamos VeredillasFM Impresiones 3D!</a></h3>
-      <p style="color: #8b949e; font-size: 0.9em; margin: 4px 0 10px 0;">📅 <strong>06/04/2026</strong></p>
-      <p style="color: #c9d1d9; line-height: 1.5;">Ampliamos el ecosistema de Veredillas FM con un nuevo servicio de impresión 3D para toda la comunidad educativa del IES Las Veredillas.</p>
-    </td>
-  </tr>
-</table>
-<table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 20px;">
-  <tr>
-    <td width="40%" align="center" valign="middle">
-      <a href="https://broslunas.com/blog/broslunas-cms/" target="_blank">
-        <img src="https://cdn.broslunas.com/projects/brl-cms.png" width="100%" style="max-width: 380px; border-radius: 12px; border: 1px solid #30363d; box-shadow: 0 4px 12px rgba(0,0,0,0.15); object-fit: cover;" alt="Broslunas CMS: El Futuro de la Gestión de Contenido para Astro"/>
-      </a>
-    </td>
-    <td width="60%" valign="top" style="padding-left: 20px;">
-      <h3><a href="https://broslunas.com/blog/broslunas-cms/" target="_blank" style="color: #ff7b72; text-decoration: none;">📝 Broslunas CMS: El Futuro de la Gestión de Contenido para Astro</a></h3>
-      <p style="color: #8b949e; font-size: 0.9em; margin: 4px 0 10px 0;">📅 <strong>07/02/2026</strong></p>
-      <p style="color: #c9d1d9; line-height: 1.5;">Descubre Broslunas CMS, el sistema de gestión de contenido diseñado para simplificar la creación y gestión de sitios web y aplicaciones Astro. Inte...</p>
-    </td>
-  </tr>
+<table>
+<tr>
+<td width="18%" valign="top"><sub><code>17.10.2026</code></sub></td>
+<td valign="top"><b><a href="https://www.broslunas.com/es/blog/ejecuta-tech-y-pagalagasofa">Dos proyectos nuevos: ejecuta.tech y PagaLaGasofa</a></b><br/><sub>Un playground para ejecutar código en el navegador y una app para repartir el coste de los viajes. Qué hacen y qué me llevo de construirlos.</sub></td>
+</tr>
+<tr>
+<td width="18%" valign="top"><sub><code>22.06.2026</code></sub></td>
+<td valign="top"><b><a href="https://www.broslunas.com/es/blog/lanzamiento-divvy">Lanzamiento de Divvy: Gastos Compartidos y Cuentas Claras</a></b><br/><sub>Presento mi nuevo proyecto personal, Divvy. Una web app y PWA inteligente diseñada para dividir gastos y simplificar deudas en grupo de for…</sub></td>
+</tr>
+<tr>
+<td width="18%" valign="top"><sub><code>31.01.2026</code></sub></td>
+<td valign="top"><b><a href="https://www.broslunas.com/es/blog/lanzamiento-veredillasfm">Veredillas FM: Reinventando la radio de tu insti</a></b><br/><sub>Te presento la nueva web de Veredillas FM. Mucho más que escuchar podcasts: chat en directo, noticias y una comunidad para todos.</sub></td>
+</tr>
+<tr>
+<td width="18%" valign="top"><sub><code>21.12.2025</code></sub></td>
+<td valign="top"><b><a href="https://www.broslunas.com/es/blog/seguridad-ia-formulario-contacto">IA Guardiana: Protección Inteligente en mi Formulario de Contacto con n8n</a></b><br/><sub>He actualizado mi formulario de contacto integrando n8n y un sistema de filtrado por IA que analiza cada mensaje para bloquear el spam de f…</sub></td>
+</tr>
 </table>
 <!-- blog:end -->
 
----
+<a href="https://broslunas.com/es/blog"><img src="assets/buttons/posts.svg" height="40" alt="Ver todos los posts" /></a>
 
-### 🎓 Certificaciones Recientes
-<div align="center">
+<br/><br/>
+
+<img src="assets/sections/certs.svg" width="100%" alt="04 / Certificaciones" />
+
 <!-- certs:start -->
-<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td align="center" valign="top" width="33%" style="padding: 15px;"><a href="https://broslunas.com/certificates/desarrollo-web-con-ia/" target="_blank"><img src="https://cdn.broslunas.com/certificates/intro-ia-para-devs.png" height="110" title="Desarrollo Web con IA" style="border-radius: 10px; border: 1px solid #30363d; box-shadow: 0 4px 8px rgba(0,0,0,0.2);"/></a><br/><br/><strong style="color: #adbac7; font-size: 0.95em;">Desarrollo Web con IA</strong><br/><span style="color: #768390; font-size: 0.85em;">21/05/2026</span></td><td align="center" valign="top" width="33%" style="padding: 15px;"><a href="https://broslunas.com/certificates/intro-ia-para-devs/" target="_blank"><img src="https://cdn.broslunas.com/certificates/intro-ia-para-devs.png" height="110" title="Introducción a la IA para Developers" style="border-radius: 10px; border: 1px solid #30363d; box-shadow: 0 4px 8px rgba(0,0,0,0.2);"/></a><br/><br/><strong style="color: #adbac7; font-size: 0.95em;">Introducción a la IA para Developers</strong><br/><span style="color: #768390; font-size: 0.85em;">20/05/2026</span></td><td align="center" valign="top" width="33%" style="padding: 15px;"><a href="https://broslunas.com/certificates/cibersecurity-google/" target="_blank"><img src="https://cdn.broslunas.com/certificates/cibersecurity-google.png" height="110" title="Google Cybersecurity" style="border-radius: 10px; border: 1px solid #30363d; box-shadow: 0 4px 8px rgba(0,0,0,0.2);"/></a><br/><br/><strong style="color: #adbac7; font-size: 0.95em;">Google Cybersecurity</strong><br/><span style="color: #768390; font-size: 0.85em;">19/09/2025</span></td></tr><tr><td align="center" valign="top" width="33%" style="padding: 15px;"><a href="https://broslunas.com/certificates/figma-desde-0/" target="_blank"><img src="https://cdn.broslunas.com/certificates/figma-desde-0.png" height="110" title="Figma Desde 0" style="border-radius: 10px; border: 1px solid #30363d; box-shadow: 0 4px 8px rgba(0,0,0,0.2);"/></a><br/><br/><strong style="color: #adbac7; font-size: 0.95em;">Figma Desde 0</strong><br/><span style="color: #768390; font-size: 0.85em;">16/07/2025</span></td><td align="center" valign="top" width="33%" style="padding: 15px;"><a href="https://broslunas.com/certificates/css-desde-0/" target="_blank"><img src="https://cdn.broslunas.com/certificates/css-desde-0.png" height="110" title="CSS Desde 0" style="border-radius: 10px; border: 1px solid #30363d; box-shadow: 0 4px 8px rgba(0,0,0,0.2);"/></a><br/><br/><strong style="color: #adbac7; font-size: 0.95em;">CSS Desde 0</strong><br/><span style="color: #768390; font-size: 0.85em;">12/07/2025</span></td><td align="center" valign="top" width="33%" style="padding: 15px;"><a href="https://broslunas.com/certificates/html-desde-0/" target="_blank"><img src="https://cdn.broslunas.com/certificates/html-desde-0.png" height="110" title="HTML desde 0" style="border-radius: 10px; border: 1px solid #30363d; box-shadow: 0 4px 8px rgba(0,0,0,0.2);"/></a><br/><br/><strong style="color: #adbac7; font-size: 0.95em;">HTML desde 0</strong><br/><span style="color: #768390; font-size: 0.85em;">11/07/2025</span></td></tr></table>
+<table>
+<tr>
+<td width="33%" valign="top">
+<a href="https://certificados.midudev.com/3d6228c8-0c92-499a-acb6-56e4bb7d79d7.pdf"><img src="https://www.broslunas.com/api/img?p=projects%2Fcert-desarrollo-web-con-ia-pG7JclOEx6EYL550vTpyza2mefcvWp.png" width="100%" alt="Desarrollo Web con IA"/></a>
+<br/><b><sub>Desarrollo Web con IA</sub></b>
+<br/><sub><code>Midu.dev · 21.05.2026</code></sub>
+</td>
+<td width="33%" valign="top">
+<a href="https://certificados.midudev.com/d9c5d4f1-884a-43cd-97f7-51bb2cedae9f.pdf"><img src="https://www.broslunas.com/api/img?p=projects%2Fcert-intro-ia-para-devs-l0S3J24G1ZLlmsPv5jDh9XmI2befha.png" width="100%" alt="Introducción a la IA para Developers"/></a>
+<br/><b><sub>Introducción a la IA para Developers</sub></b>
+<br/><sub><code>Midu.dev · 20.05.2026</code></sub>
+</td>
+<td width="33%" valign="top">
+<a href="https://www.coursera.org/account/accomplishments/professional-cert/BWWYNAVLLIHG"><img src="https://www.broslunas.com/api/img?p=projects%2Fcert-cibersecurity-google-Eb2KcAhAOVNs9N62Rfgn3B86RCEIdd.png" width="100%" alt="Google Cybersecurity"/></a>
+<br/><b><sub>Google Cybersecurity</sub></b>
+<br/><sub><code>Coursera · 19.09.2025</code></sub>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top">
+<a href="https://certificados.midudev.com/170646db-56be-4eb9-a232-f249c93e469f.pdf"><img src="https://www.broslunas.com/api/img?p=projects%2Fcert-figma-desde-0-U6bOds6NWdZzi5d1xDZNhmAd5eCPMo.png" width="100%" alt="Figma Desde 0"/></a>
+<br/><b><sub>Figma Desde 0</sub></b>
+<br/><sub><code>Midu.dev · 16.07.2025</code></sub>
+</td>
+<td width="33%" valign="top">
+<a href="https://certificados.midudev.com/38b61cc9-e132-40e0-bc6e-9b196b0c476b.pdf"><img src="https://www.broslunas.com/api/img?p=projects%2Fcert-css-desde-0-uNikI2RA6DRzSk1pWmKITIuVaafE1K.png" width="100%" alt="CSS Desde 0"/></a>
+<br/><b><sub>CSS Desde 0</sub></b>
+<br/><sub><code>Midu.dev · 12.07.2025</code></sub>
+</td>
+<td width="33%" valign="top">
+<a href="https://certificados.midudev.com/6a1e53e3-6933-45dd-b854-c967d10a1f81.pdf"><img src="https://www.broslunas.com/api/img?p=projects%2Fcert-html-desde-0-a7mfTAeABk7kz7164NaJLIbv5ydApS.png" width="100%" alt="HTML desde 0"/></a>
+<br/><b><sub>HTML desde 0</sub></b>
+<br/><sub><code>Midu.dev · 11.07.2025</code></sub>
+</td>
+</tr>
+</table>
 <!-- certs:end -->
-</div>
 
----
+<br/>
 
-### 📈 GitHub Dashboard
+<img src="assets/sections/activity.svg" width="100%" alt="05 / Actividad en GitHub" />
 
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/broslunas/broslunas/pacman-output/bomberman-contribution-graph-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/broslunas/broslunas/pacman-output/bomberman-contribution-graph.svg">
-    <img alt="bomberman contribution graph" src="https://raw.githubusercontent.com/broslunas/broslunas/pacman-output/bomberman-contribution-graph.svg" width="100%" style="border-radius: 12px; margin-bottom: 20px;">
-  </picture>
-</div>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/broslunas/broslunas/pacman-output/bomberman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/broslunas/broslunas/pacman-output/bomberman-contribution-graph.svg">
+  <img alt="Bomberman contribution graph" src="https://raw.githubusercontent.com/broslunas/broslunas/pacman-output/bomberman-contribution-graph.svg" width="100%">
+</picture>
 
-<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<table>
   <tr>
-    <td width="50%" align="center" valign="top" style="padding: 10px;">
-      <img src="https://raw.githubusercontent.com/broslunas/broslunas/stats-output/stats.svg" width="100%" style="max-width: 450px;" alt="stats graph" />
+    <td width="50%" align="center" valign="top">
+      <img src="https://raw.githubusercontent.com/broslunas/broslunas/stats-output/stats.svg" width="100%" alt="GitHub stats" />
     </td>
-    <td width="50%" align="center" valign="top" style="padding: 10px;">
-      <img src="https://raw.githubusercontent.com/broslunas/broslunas/languages-output/languages.svg" width="100%" style="max-width: 450px;" alt="languages graph" />
+    <td width="50%" align="center" valign="top">
+      <img src="https://raw.githubusercontent.com/broslunas/broslunas/languages-output/languages.svg" width="100%" alt="Lenguajes" />
     </td>
   </tr>
   <tr>
-    <td colspan="2" align="center" valign="middle" style="padding: 10px;">
-      <img src="https://streak-stats.demolab.com?user=Broslunas&theme=github_dark&hide_border=true&locale=es&mode=weekly" width="100%" style="max-width: 450px;" alt="streak graph" />
+    <td colspan="2" align="center">
+      <img src="https://streak-stats.demolab.com?user=Broslunas&locale=es&mode=weekly&hide_border=true&background=0A0A0A&stroke=2A2A2A&ring=FF5A1F&fire=FF5A1F&currStreakNum=EAEAEA&sideNums=EAEAEA&currStreakLabel=FF5A1F&sideLabels=8A8A8A&dates=8A8A8A" width="100%" alt="Racha" />
     </td>
   </tr>
 </table>
 
-<div align="center" style="margin-top: 15px; margin-bottom: 15px;">
-  <img src="https://raw.githubusercontent.com/broslunas/broslunas/trophy-output/trophy.svg" width="100%" style="max-width: 860px;" alt="trophy graph" />
-</div>
+<img src="https://raw.githubusercontent.com/broslunas/broslunas/trophy-output/trophy.svg" width="100%" alt="Trofeos" />
 
-<br/>
+<img src="https://raw.githubusercontent.com/broslunas/broslunas/activity-graph-output/activity-graph.svg" width="100%" alt="Gráfico de actividad" />
 
-<div align="center">
-  <img src="https://raw.githubusercontent.com/broslunas/broslunas/activity-graph-output/activity-graph.svg" width="100%" style="max-width: 900px; border-radius: 12px;" alt="activity-graph graph" />
-</div>
+<br/><br/>
 
----
+<img src="assets/sections/contact.svg" width="100%" alt="06 / Contacto" />
 
-### 🤝 Contacto y Apoyo
-<div align="center">
-  <a href="https://instagram.com/_pablito_luna_" target="_blank">
-    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="instagram" />
-  </a>
-  <a href="https://paypal.me/pablolunaperez0" target="_blank">
-    <img src="https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white" alt="paypal" />
-  </a>
-</div>
+<p>
+  <a href="https://broslunas.com"><img src="assets/buttons/web.svg" height="40" alt="broslunas.com" /></a>
+  <a href="https://instagram.com/_pablito_luna_"><img src="assets/buttons/instagram.svg" height="40" alt="Instagram" /></a>
+  <a href="https://paypal.me/pablolunaperez0"><img src="assets/buttons/paypal.svg" height="40" alt="PayPal" /></a>
+</p>
