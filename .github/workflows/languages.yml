@@ -21,14 +21,34 @@ jobs:
     timeout-minutes: 5
 
     steps:
+      # GITHUB_TOKEN is an integration token: the GraphQL user query fails with
+      # "Resource not accessible by integration" and the error card gets published.
+      - name: check STATS_TOKEN
+        env:
+          STATS_TOKEN: ${{ secrets.STATS_TOKEN }}
+        run: |
+          if [ -z "$STATS_TOKEN" ]; then
+            echo "::error::STATS_TOKEN secret is missing. Create a classic PAT with read:user and repo scopes and save it as STATS_TOKEN."
+            exit 1
+          fi
+
       - name: generate languages.svg
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: top-langs
           options: username=${{ github.repository_owner }}&locale=es&hide_title=false&layout=compact&card_width=320&langs_count=5&bg_color=00000000&title_color=ff5a1f&text_color=eaeaea&icon_color=ff5a1f&ring_color=ff5a1f&hide_border=true
           path: dist/languages.svg
-          token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.STATS_TOKEN }}
 
+
+      # Keep the last good card instead of publishing an error card.
+      - name: validate languages.svg
+        run: |
+          if grep -q "Something went wrong" dist/languages.svg; then
+            grep -o '<tspan[^>]*>[^<]*</tspan>' dist/languages.svg | sed 's/<[^>]*>//g'
+            echo "::error::github-readme-stats returned an error card (check STATS_TOKEN scopes/expiry)."
+            exit 1
+          fi
 
       - name: push languages.svg to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
