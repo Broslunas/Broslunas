@@ -21,12 +21,23 @@ jobs:
     timeout-minutes: 5
 
     steps:
+      # GITHUB_TOKEN is an integration token: the GraphQL user query returns
+      # null fields (contributions, organizations...) and the action crashes.
+      - name: check STATS_TOKEN
+        env:
+          STATS_TOKEN: ${{ secrets.STATS_TOKEN }}
+        run: |
+          if [ -z "$STATS_TOKEN" ]; then
+            echo "::error::STATS_TOKEN secret is missing. Create a classic PAT with read:user and repo scopes and save it as STATS_TOKEN."
+            exit 1
+          fi
+
       - name: generate trophy.svg
         uses: Erik-Donath/github-profile-trophy@feature/generate-svg
         with:
           username: ${{ github.repository_owner }}
           file: dist/trophy.svg
-          token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.STATS_TOKEN }}
           theme: dark_dimmed
           max-rows: 1
           margin-width: 8
