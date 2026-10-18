@@ -71,6 +71,10 @@
 <!-- blog:start -->
 <table>
 <tr>
+<td width="18%" valign="top"><sub><code>18.10.2026</code></sub></td>
+<td valign="top"><b><a href="https://www.broslunas.com/es/blog/broslunas-link" target="_blank" rel="noopener">Broslunas Link: tu página de enlaces en tu propio subdominio</a></b><br/><sub>Un Linktree multi-tenant hecho en un día: subdominios por cliente, datos aislados, siete temas y QR. Cómo está montado y qué decisiones pes…</sub></td>
+</tr>
+<tr>
 <td width="18%" valign="top"><sub><code>17.10.2026</code></sub></td>
 <td valign="top"><b><a href="https://www.broslunas.com/es/blog/ejecuta-tech-y-pagalagasofa" target="_blank" rel="noopener">Dos proyectos nuevos: ejecuta.tech y PagaLaGasofa</a></b><br/><sub>Un playground para ejecutar código en el navegador y una app para repartir el coste de los viajes. Qué hacen y qué me llevo de construirlos.</sub></td>
 </tr>
@@ -81,10 +85,6 @@
 <tr>
 <td width="18%" valign="top"><sub><code>31.01.2026</code></sub></td>
 <td valign="top"><b><a href="https://www.broslunas.com/es/blog/lanzamiento-veredillasfm" target="_blank" rel="noopener">Veredillas FM: Reinventando la radio de tu insti</a></b><br/><sub>Te presento la nueva web de Veredillas FM. Mucho más que escuchar podcasts: chat en directo, noticias y una comunidad para todos.</sub></td>
-</tr>
-<tr>
-<td width="18%" valign="top"><sub><code>21.12.2025</code></sub></td>
-<td valign="top"><b><a href="https://www.broslunas.com/es/blog/seguridad-ia-formulario-contacto" target="_blank" rel="noopener">IA Guardiana: Protección Inteligente en mi Formulario de Contacto con n8n</a></b><br/><sub>He actualizado mi formulario de contacto integrando n8n y un sistema de filtrado por IA que analiza cada mensaje para bloquear el spam de f…</sub></td>
 </tr>
 </table>
 <!-- blog:end -->
