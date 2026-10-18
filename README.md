@@ -155,7 +155,7 @@
   </tr>
   <tr>
     <td colspan="2" align="center">
-      <img src="https://streak-stats.demolab.com?user=Broslunas&locale=es&mode=weekly&hide_border=true&background=0A0A0A&stroke=2A2A2A&ring=FF5A1F&fire=FF5A1F&currStreakNum=EAEAEA&sideNums=EAEAEA&currStreakLabel=FF5A1F&sideLabels=8A8A8A&dates=8A8A8A" width="100%" alt="Racha" />
+      <img src="https://streak-stats.demolab.com?user=Broslunas&locale=es&mode=weekly&hide_border=true&background=00000000&stroke=2A2A2A&ring=FF5A1F&fire=FF5A1F&currStreakNum=EAEAEA&sideNums=EAEAEA&currStreakLabel=FF5A1F&sideLabels=8A8A8A&dates=8A8A8A" width="100%" alt="Racha" />
     </td>
   </tr>
 </table>

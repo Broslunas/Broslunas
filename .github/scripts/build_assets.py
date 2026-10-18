@@ -1,6 +1,6 @@
 """Generates the README's SVG assets (hero, section headers and buttons).
 
-The look mirrors the hero of broslunas.com: near-black background, Archivo Black
+The look mirrors the hero of broslunas.com: transparent background, Archivo Black
 display type, JetBrains Mono tags and an orange accent. Fonts are embedded as
 base64 so the SVGs render the same inside GitHub's <img> sandbox.
 
@@ -8,16 +8,65 @@ Run from the repository root:  python .github/scripts/build_assets.py
 """
 import base64
 import math
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 ASSETS = ROOT / "assets"
 
-BG = "#0a0a0a"
+INK = "#0a0a0a"  # text on solid orange buttons, same in both themes
 FG = "#eaeaea"
 DIM = "#8a8a8a"
 LINE = "#2a2a2a"
 ACCENT = "#ff5a1f"
+
+# The SVGs have no background of their own so they blend into whatever GitHub
+# theme is showing. Every neutral is swapped for a light-theme twin through CSS
+# variables; the accent stays the same.
+THEME = {
+    FG: ("fg", "#1f2328"),
+    DIM: ("dim", "#59636e"),
+    LINE: ("line", "#d1d9e0"),
+    "#151515": ("grid", "#f0f2f4"),
+    "#2e2e2e": ("hud-2", "#d8dde2"),
+    "#3a3a3a": ("hud-3", "#c4cbd2"),
+    "#4a4a4a": ("hud-4", "#aab3bc"),
+    "#5a2410": ("moon", "#ffcfbb"),
+    "#6a3018": ("moon-edge", "#f3a888"),
+}
+THEME_CSS = (
+    "svg{" + "".join(f"--{n}:{dark};" for dark, (n, _) in THEME.items()) + "}"
+    "@media (prefers-color-scheme:light){svg{"
+    + "".join(f"--{n}:{light};" for n, light in THEME.values()) + "}}"
+)
+_TAG = re.compile(r"<[a-zA-Z][^<>]*>")
+_COLOR_ATTR = re.compile(r'\s(fill|stroke|stop-color)="(#[0-9a-fA-F]{6})"')
+_STYLE_ATTR = re.compile(r'\sstyle="([^"]*)"')
+
+
+def themed(markup):
+    """Turns hard-coded neutral colours into var(--x) so the light theme can swap them."""
+    def tag(m):
+        t = m.group(0)
+        decls = []
+
+        def attr(a):
+            prop, color = a.groups()
+            if color.lower() not in THEME:
+                return a.group(0)
+            decls.append(f"{prop}:var(--{THEME[color.lower()][0]})")
+            return ""
+
+        t = _COLOR_ATTR.sub(attr, t)
+        if not decls:
+            return t
+        style = ";".join(decls)
+        if _STYLE_ATTR.search(t):
+            return _STYLE_ATTR.sub(lambda s: f' style="{s.group(1)};{style}"', t, count=1)
+        end = -2 if t.endswith("/>") else -1
+        return f'{t[:end]} style="{style}"{t[end:]}'
+
+    return _TAG.sub(tag, markup)
 
 
 def font_face(family, file, weight="400"):
@@ -47,18 +96,20 @@ def svg(width, height, body, css="", fonts=(DISPLAY, MONO), label=""):
     return (
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
         f'viewBox="0 0 {width} {height}" role="img" aria-label="{label}">\n'
-        f"<style>{''.join(fonts)}{BASE_CSS}{css}</style>\n{body}\n</svg>\n"
+        f"<style>{''.join(fonts)}{THEME_CSS}{BASE_CSS}{css}</style>\n{themed(body)}\n</svg>\n"
     )
 
 
 def logo_mark(x, y, size):
+    # The crescent is cut out with a mask so the page background shows through.
     s = size / 64
     return (
         f'<g transform="translate({x} {y}) scale({s})">'
-        f'<rect width="64" height="64" fill="{ACCENT}"/>'
-        f'<circle cx="29" cy="35" r="20" fill="{BG}"/>'
-        f'<circle cx="40" cy="26" r="17" fill="{ACCENT}"/>'
-        f'<rect x="43" y="13" width="7" height="7" fill="{BG}"/></g>'
+        f'<mask id="logo-cut"><rect width="64" height="64" fill="#fff"/>'
+        f'<circle cx="29" cy="35" r="20" fill="#000"/>'
+        f'<circle cx="40" cy="26" r="17" fill="#fff"/>'
+        f'<rect x="43" y="13" width="7" height="7" fill="#000"/></mask>'
+        f'<rect width="64" height="64" fill="{ACCENT}" mask="url(#logo-cut)"/></g>'
     )
 
 
@@ -122,14 +173,17 @@ def hud(cx, cy):
     out.append(f'<text x="{px}" y="{py - 40}" class="mono" font-size="11" fill="{ACCENT}">&lt; FASES &gt;</text>')
     out.append('<defs>')
     for k in range(8):
-        out.append(f'<clipPath id="ph{k}"><circle cx="{px + 12 + k * 33}" cy="{py}" r="12"/></clipPath>')
-    out.append('</defs>')
-    for k in range(8):
         x = px + 12 + k * 33
         shadow = 26 * k / 7
         out.append(
-            f'<circle cx="{x}" cy="{py}" r="12" fill="#5a2410"/>'
-            f'<g clip-path="url(#ph{k})"><circle cx="{x - shadow}" cy="{py}" r="12" fill="{BG}"/></g>'
+            f'<mask id="ph{k}"><rect x="{x - 13}" y="{py - 13}" width="26" height="26" fill="#fff"/>'
+            f'<circle cx="{x - shadow:.2f}" cy="{py}" r="12" fill="#000"/></mask>'
+        )
+    out.append('</defs>')
+    for k in range(8):
+        x = px + 12 + k * 33
+        out.append(
+            f'<circle cx="{x}" cy="{py}" r="12" fill="#5a2410" mask="url(#ph{k})"/>'
             f'<circle cx="{x}" cy="{py}" r="12" fill="none" stroke="#6a3018"/>'
         )
     out.append(f'<path d="M{px} {py + 27}H{px + 260}" stroke="#2e2e2e"/>')
@@ -162,16 +216,15 @@ def hero():
     grid = "".join(f"M{x} 0V{H}" for x in range(0, W + 1, 80)) + "".join(f"M0 {y}H{W}" for y in range(0, H + 1, 80))
     body = f"""
 <defs>{GRAIN}
-<linearGradient id="fade" x1="0" x2="1"><stop offset="0" stop-color="{BG}"/><stop offset=".45" stop-color="{BG}" stop-opacity=".2"/><stop offset="1" stop-color="{BG}" stop-opacity="0"/></linearGradient>
+<linearGradient id="fade-grad" x1="0" x2="1"><stop offset="0" stop-color="#000"/><stop offset=".45" stop-color="#ccc"/><stop offset="1" stop-color="#fff"/></linearGradient>
+<mask id="fade"><rect width="{W}" height="{H}" fill="url(#fade-grad)"/></mask>
 <linearGradient id="scanline" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="{ACCENT}" stop-opacity="0"/><stop offset="1" stop-color="{ACCENT}" stop-opacity=".05"/></linearGradient>
 <clipPath id="frame"><rect width="{W}" height="{H}"/></clipPath>
 </defs>
-<rect width="{W}" height="{H}" fill="{BG}"/>
-<g clip-path="url(#frame)">
+<g clip-path="url(#frame)" mask="url(#fade)">
   <path d="{grid}" stroke="#151515"/>
   <g opacity=".75">{hud(980, 250)}</g>
   <rect class="scan" x="560" y="-80" width="{W - 560}" height="60" fill="url(#scanline)"/>
-  <rect width="{W}" height="{H}" fill="url(#fade)"/>
 </g>
 
 <g class="mono" font-size="13" fill="{DIM}">
@@ -199,7 +252,6 @@ def hero():
 def section(n, label, title):
     W, H = 1280, 150
     body = f"""
-<rect width="{W}" height="{H}" fill="{BG}"/>
 <path d="M0 .5H{W}" stroke="{LINE}"/>
 <text x="0" y="40" class="mono" font-size="15" fill="{DIM}"><tspan fill="{ACCENT}">{n}</tspan> / [ {label} ]</text>
 <text x="-4" y="128" class="macro" font-size="72" fill="{FG}">{title}<tspan fill="{ACCENT}">.</tspan></text>
@@ -216,7 +268,7 @@ def button(text, style, icon=None):
     W, H = int(tw + pad * 2), 46
     fill = {"solid": ACCENT, "outline": "none", "ghost": "none"}[style]
     stroke = {"solid": ACCENT, "outline": ACCENT, "ghost": "#3a3a3a"}[style]
-    color = {"solid": BG, "outline": ACCENT, "ghost": FG}[style]
+    color = {"solid": INK, "outline": ACCENT, "ghost": FG}[style]
     ix = pad + len(text) * char + 16
     icons = {
         "arrow": arrow(ix + 4, H / 2, color),
