@@ -16,10 +16,10 @@
 <table>
 <tr>
 <td width="33%" valign="top">
-<a href="https://www.broslunas.com/es/projects/6ad35a898edc6949d0e2f356" target="_blank" rel="noopener"><img src="https://www.broslunas.com/api/img?p=projects%2Fejecuta-tech-1w548uno7privMtLgbc0MPHDUtJ4qP.png" width="100%" alt="ejecuta.tech"/></a>
+<a href="https://www.broslunas.com/es/projects/6ad4daab7a409884ebd3a22a" target="_blank" rel="noopener"><img src="https://www.broslunas.com/api/img?p=projects%2Fbroslunas-link-7BXgZQVUkrPiMNKHJV7WRLVdhE4BPk.png" width="100%" alt="Broslunas Link"/></a>
 <br/><sub><code>01</code></sub>
-<br/><b><a href="https://www.broslunas.com/es/projects/6ad35a898edc6949d0e2f356" target="_blank" rel="noopener">ejecuta.tech</a></b>
-<br/><sub>Playground online para compilar y ejecutar código en el navegador: C++, Python, TypeScript, JavaScript, HTML y Bash.</sub>
+<br/><b><a href="https://www.broslunas.com/es/projects/6ad4daab7a409884ebd3a22a" target="_blank" rel="noopener">Broslunas Link</a></b>
+<br/><sub>Páginas de enlaces multi-tenant: cada persona o negocio tiene la suya en su propio subdominio, con temas, WhatsApp y código QR.</sub>
 </td>
 <td width="33%" valign="top">
 <a href="https://www.broslunas.com/es/projects/6ad35a898edc6949d0e2f357" target="_blank" rel="noopener"><img src="https://www.broslunas.com/api/img?p=projects%2Fpagalagasofa-qXROxnbTtSrvX9Qi4sinACKkpqGkyQ.png" width="100%" alt="PagaLaGasofa"/></a>
@@ -71,6 +71,10 @@
 <!-- blog:start -->
 <table>
 <tr>
+<td width="18%" valign="top"><sub><code>21.10.2026</code></sub></td>
+<td valign="top"><b><a href="https://www.broslunas.com/es/blog/notas" target="_blank" rel="noopener">Notas: tu nota final, sin sorpresas</a></b><br/><sub>Un registro de calificaciones con ponderaciones de verdad, nota necesaria, horario con IA y avisos. Cómo está montado y qué decisiones pesa…</sub></td>
+</tr>
+<tr>
 <td width="18%" valign="top"><sub><code>18.10.2026</code></sub></td>
 <td valign="top"><b><a href="https://www.broslunas.com/es/blog/broslunas-link" target="_blank" rel="noopener">Broslunas Link: tu página de enlaces en tu propio subdominio</a></b><br/><sub>Un Linktree multi-tenant hecho en un día: subdominios por cliente, datos aislados, siete temas y QR. Cómo está montado y qué decisiones pes…</sub></td>
 </tr>
@@ -81,10 +85,6 @@
 <tr>
 <td width="18%" valign="top"><sub><code>22.06.2026</code></sub></td>
 <td valign="top"><b><a href="https://www.broslunas.com/es/blog/lanzamiento-divvy" target="_blank" rel="noopener">Lanzamiento de Divvy: Gastos Compartidos y Cuentas Claras</a></b><br/><sub>Presento mi nuevo proyecto personal, Divvy. Una web app y PWA inteligente diseñada para dividir gastos y simplificar deudas en grupo de for…</sub></td>
-</tr>
-<tr>
-<td width="18%" valign="top"><sub><code>31.01.2026</code></sub></td>
-<td valign="top"><b><a href="https://www.broslunas.com/es/blog/lanzamiento-veredillasfm" target="_blank" rel="noopener">Veredillas FM: Reinventando la radio de tu insti</a></b><br/><sub>Te presento la nueva web de Veredillas FM. Mucho más que escuchar podcasts: chat en directo, noticias y una comunidad para todos.</sub></td>
 </tr>
 </table>
 <!-- blog:end -->
