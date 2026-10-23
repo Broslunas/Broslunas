@@ -16,22 +16,22 @@
 <table>
 <tr>
 <td width="33%" valign="top">
-<a href="https://www.broslunas.com/es/projects/6ad4daab7a409884ebd3a22a" target="_blank" rel="noopener"><img src="https://www.broslunas.com/api/img?p=projects%2Fbroslunas-link-7BXgZQVUkrPiMNKHJV7WRLVdhE4BPk.png" width="100%" alt="Broslunas Link"/></a>
+<a href="https://www.broslunas.com/es/projects/6ad907419ec1757e60d55c79" target="_blank" rel="noopener"><img src="https://www.broslunas.com/api/img?p=projects%2Fnotas-ciqYg7AwdPquLGvaODD68Cpd5LwYE4.png" width="100%" alt="Notas"/></a>
 <br/><sub><code>01</code></sub>
+<br/><b><a href="https://www.broslunas.com/es/projects/6ad907419ec1757e60d55c79" target="_blank" rel="noopener">Notas</a></b>
+<br/><sub>Registro de calificaciones académicas: ponderaciones complejas, nota necesaria para aprobar, horario con IA, avisos y enlaces de solo lectu…</sub>
+</td>
+<td width="33%" valign="top">
+<a href="https://www.broslunas.com/es/projects/6ad4daab7a409884ebd3a22a" target="_blank" rel="noopener"><img src="https://www.broslunas.com/api/img?p=projects%2Fbroslunas-link-7BXgZQVUkrPiMNKHJV7WRLVdhE4BPk.png" width="100%" alt="Broslunas Link"/></a>
+<br/><sub><code>02</code></sub>
 <br/><b><a href="https://www.broslunas.com/es/projects/6ad4daab7a409884ebd3a22a" target="_blank" rel="noopener">Broslunas Link</a></b>
 <br/><sub>Páginas de enlaces multi-tenant: cada persona o negocio tiene la suya en su propio subdominio, con temas, WhatsApp y código QR.</sub>
 </td>
 <td width="33%" valign="top">
 <a href="https://www.broslunas.com/es/projects/6ad35a898edc6949d0e2f357" target="_blank" rel="noopener"><img src="https://www.broslunas.com/api/img?p=projects%2Fpagalagasofa-qXROxnbTtSrvX9Qi4sinACKkpqGkyQ.png" width="100%" alt="PagaLaGasofa"/></a>
-<br/><sub><code>02</code></sub>
+<br/><sub><code>03</code></sub>
 <br/><b><a href="https://www.broslunas.com/es/projects/6ad35a898edc6949d0e2f357" target="_blank" rel="noopener">PagaLaGasofa</a></b>
 <br/><sub>Calcula el coste de un viaje, repártelo entre los pasajeros y encuentra la gasolinera más barata de España.</sub>
-</td>
-<td width="33%" valign="top">
-<a href="https://www.broslunas.com/es/projects/6ad33dfd8ade78068f7eed9e" target="_blank" rel="noopener"><img src="https://www.broslunas.com/api/img?p=projects%2Fveredillas-fm-cover-6mMcH6TISe6ZEHciS9SvpiHOFexygM.png" width="100%" alt="Veredillas FM"/></a>
-<br/><sub><code>03</code></sub>
-<br/><b><a href="https://www.broslunas.com/es/projects/6ad33dfd8ade78068f7eed9e" target="_blank" rel="noopener">Veredillas FM</a></b>
-<br/><sub>Plataforma web de podcast y radio escolar del IES Las Veredillas: episodios por temporadas, radio en directo, blog, ranking de oyentes y cr…</sub>
 </td>
 </tr>
 </table>
