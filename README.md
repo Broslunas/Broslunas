@@ -16,22 +16,22 @@
 <table>
 <tr>
 <td width="33%" valign="top">
-<a href="https://www.broslunas.com/es/projects/6ad907419ec1757e60d55c79" target="_blank" rel="noopener"><img src="https://www.broslunas.com/api/img?p=projects%2Fnotas-ciqYg7AwdPquLGvaODD68Cpd5LwYE4.png" width="100%" alt="Notas"/></a>
+<a href="https://www.broslunas.com/es/projects/6af730971d2fac0ca25b0921" target="_blank" rel="noopener"><img src="https://www.broslunas.com/api/img?p=projects%2Fdiffight-rxCRKrJajC64qc7koua7mGM1pWj74R.png" width="100%" alt="Diffight"/></a>
 <br/><sub><code>01</code></sub>
+<br/><b><a href="https://www.broslunas.com/es/projects/6af730971d2fac0ca25b0921" target="_blank" rel="noopener">Diffight</a></b>
+<br/><sub>Duelos de código a ciegas: desafíos diarios con tests ocultos, duelos 1v1 en vivo, un juez de IA con personalidad, ligas, torneos y un edit…</sub>
+</td>
+<td width="33%" valign="top">
+<a href="https://www.broslunas.com/es/projects/6ad907419ec1757e60d55c79" target="_blank" rel="noopener"><img src="https://www.broslunas.com/api/img?p=projects%2Fnotas-ciqYg7AwdPquLGvaODD68Cpd5LwYE4.png" width="100%" alt="Notas"/></a>
+<br/><sub><code>02</code></sub>
 <br/><b><a href="https://www.broslunas.com/es/projects/6ad907419ec1757e60d55c79" target="_blank" rel="noopener">Notas</a></b>
 <br/><sub>Registro de calificaciones académicas: ponderaciones complejas, nota necesaria para aprobar, horario con IA, avisos y enlaces de solo lectu…</sub>
 </td>
 <td width="33%" valign="top">
 <a href="https://www.broslunas.com/es/projects/6ad4daab7a409884ebd3a22a" target="_blank" rel="noopener"><img src="https://www.broslunas.com/api/img?p=projects%2Fbroslunas-link-7BXgZQVUkrPiMNKHJV7WRLVdhE4BPk.png" width="100%" alt="Broslunas Link"/></a>
-<br/><sub><code>02</code></sub>
+<br/><sub><code>03</code></sub>
 <br/><b><a href="https://www.broslunas.com/es/projects/6ad4daab7a409884ebd3a22a" target="_blank" rel="noopener">Broslunas Link</a></b>
 <br/><sub>Páginas de enlaces multi-tenant: cada persona o negocio tiene la suya en su propio subdominio, con temas, WhatsApp y código QR.</sub>
-</td>
-<td width="33%" valign="top">
-<a href="https://www.broslunas.com/es/projects/6ad35a898edc6949d0e2f357" target="_blank" rel="noopener"><img src="https://www.broslunas.com/api/img?p=projects%2Fpagalagasofa-qXROxnbTtSrvX9Qi4sinACKkpqGkyQ.png" width="100%" alt="PagaLaGasofa"/></a>
-<br/><sub><code>03</code></sub>
-<br/><b><a href="https://www.broslunas.com/es/projects/6ad35a898edc6949d0e2f357" target="_blank" rel="noopener">PagaLaGasofa</a></b>
-<br/><sub>Calcula el coste de un viaje, repártelo entre los pasajeros y encuentra la gasolinera más barata de España.</sub>
 </td>
 </tr>
 </table>
@@ -71,6 +71,10 @@
 <!-- blog:start -->
 <table>
 <tr>
+<td width="18%" valign="top"><sub><code>13.11.2026</code></sub></td>
+<td valign="top"><b><a href="https://www.broslunas.com/es/blog/diffight" target="_blank" rel="noopener">Diffight: programar contra otros, a ciegas</a></b><br/><sub>Un juego de duelos de código con tests ocultos, un juez de IA y ejecución en servidor. Cómo está montado y por qué los tests mandan sobre e…</sub></td>
+</tr>
+<tr>
 <td width="18%" valign="top"><sub><code>21.10.2026</code></sub></td>
 <td valign="top"><b><a href="https://www.broslunas.com/es/blog/notas" target="_blank" rel="noopener">Notas: tu nota final, sin sorpresas</a></b><br/><sub>Un registro de calificaciones con ponderaciones de verdad, nota necesaria, horario con IA y avisos. Cómo está montado y qué decisiones pesa…</sub></td>
 </tr>
@@ -81,10 +85,6 @@
 <tr>
 <td width="18%" valign="top"><sub><code>17.10.2026</code></sub></td>
 <td valign="top"><b><a href="https://www.broslunas.com/es/blog/ejecuta-tech-y-pagalagasofa" target="_blank" rel="noopener">Dos proyectos nuevos: ejecuta.tech y PagaLaGasofa</a></b><br/><sub>Un playground para ejecutar código en el navegador y una app para repartir el coste de los viajes. Qué hacen y qué me llevo de construirlos.</sub></td>
-</tr>
-<tr>
-<td width="18%" valign="top"><sub><code>22.06.2026</code></sub></td>
-<td valign="top"><b><a href="https://www.broslunas.com/es/blog/lanzamiento-divvy" target="_blank" rel="noopener">Lanzamiento de Divvy: Gastos Compartidos y Cuentas Claras</a></b><br/><sub>Presento mi nuevo proyecto personal, Divvy. Una web app y PWA inteligente diseñada para dividir gastos y simplificar deudas en grupo de for…</sub></td>
 </tr>
 </table>
 <!-- blog:end -->
